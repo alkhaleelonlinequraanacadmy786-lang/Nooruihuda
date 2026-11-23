@@ -1,0 +1,2059 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noor Al-Huda Online Quran Academy | 1-on-1 Live Online Quran Classes</title>
+  <meta name="description" content="Learn Holy Quran online with certified Hafiz and Qari tutors. 1-on-1 personalized classes for kids, sisters, and adults worldwide. Book your free 3-day trial today.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📖</text></svg>">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            emerald: {
+              50: '#ecfdf5',
+              100: '#d1fae5',
+              200: '#a7f3d0',
+              300: '#6ee7b7',
+              400: '#34d399',
+              500: '#10b981',
+              600: '#059669',
+              700: '#047857',
+              800: '#065f46',
+              900: '#064e3b',
+              950: '#022c22',
+            },
+            gold: {
+              50: '#fffbeb',
+              100: '#fef3c7',
+              200: '#fde68a',
+              300: '#fcd34d',
+              400: '#fbbf24',
+              500: '#d4af37',
+              600: '#b45309',
+              700: '#92400e',
+            },
+            cream: {
+              50: '#fdfbf7',
+              100: '#faf9f5',
+              200: '#f4f1ea',
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+            arabic: ['Amiri', 'serif'],
+            quran: ['"Scheherazade New"', 'Amiri', 'serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-[#faf9f5] text-slate-800 antialiased selection:bg-emerald-800 selection:text-gold-300">
+
+  <!-- ================= TOP NOTICE & LIVE TIMEZONE BAR ================= -->
+  <div class="bg-emerald-950 text-emerald-100 text-xs py-2 px-4 border-b border-emerald-900/60">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+      <div class="flex items-center space-x-2">
+        <span class="inline-flex items-center px-2 py-0.5 rounded text-[11px] font-semibold bg-gold-500/20 text-gold-300 border border-gold-500/30">
+          ★ Worldwide Admissions Open
+        </span>
+        <span id="detectedTimezoneBadge" class="hidden sm:inline-flex items-center text-emerald-200">
+          <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 mr-1.5 animate-pulse"></span>
+          24/7 Flexible Time Zones Available
+        </span>
+      </div>
+
+      <div class="flex items-center space-x-4 text-emerald-200 text-xs">
+        <a href="mailto:admissions@nooralhudaaacademy.example" class="hover:text-gold-300 flex items-center transition-colors">
+          <i data-lucide="mail" class="w-3.5 h-3.5 mr-1 text-gold-400"></i>
+          admissions@nooralhudaaacademy.example
+        </a>
+        <span class="text-emerald-800">|</span>
+        <a href="https://wa.me/15550192834" target="_blank" class="hover:text-gold-300 flex items-center text-emerald-100 font-medium transition-colors">
+          <i data-lucide="message-circle" class="w-3.5 h-3.5 mr-1 text-green-400"></i>
+          WhatsApp: +1 (555) 019-2834
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= SECTION 1: TOP NAVIGATION BAR ================= -->
+  <header id="mainHeader" class="sticky top-0 z-40 bg-white transition-all duration-300 border-b border-slate-200/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        
+        <!-- Logo & Branding -->
+        <a href="#" class="flex items-center space-x-3 group">
+          <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-emerald-900 to-emerald-800 p-0.5 shadow-md flex items-center justify-center border border-gold-500/40 group-hover:scale-105 transition-transform">
+            <!-- Islamic Star & Open Book SVG -->
+            <svg class="w-8 h-8 text-gold-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+            </svg>
+          </div>
+          <div class="flex flex-col">
+            <div class="flex items-center space-x-2">
+              <span class="font-extrabold text-xl sm:text-2xl tracking-tight text-emerald-950 font-sans">Noor Al-Huda</span>
+              <span class="text-xs px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800 font-semibold uppercase tracking-wider hidden sm:inline-block">Academy</span>
+            </div>
+            <span class="text-xs font-arabic text-emerald-700 font-bold -mt-0.5 tracking-wide">نور الهدى للأكاديمية القرآنية</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden lg:flex items-center space-x-8 text-sm font-semibold text-slate-700">
+          <a href="#courses" class="hover:text-emerald-800 transition-colors">Courses</a>
+          <a href="#how-it-works" class="hover:text-emerald-800 transition-colors">How It Works</a>
+          <a href="#why-us" class="hover:text-emerald-800 transition-colors">Why Choose Us</a>
+          <a href="#tutors" class="hover:text-emerald-800 transition-colors">Tutors</a>
+          <a href="#pricing" class="hover:text-emerald-800 transition-colors">Pricing</a>
+          <a href="#testimonials" class="hover:text-emerald-800 transition-colors">Reviews</a>
+          <a href="#faq" class="hover:text-emerald-800 transition-colors">FAQ</a>
+          <a href="#contact" class="hover:text-emerald-800 transition-colors">Contact</a>
+        </nav>
+
+        <!-- Right Action Button -->
+        <div class="hidden sm:flex items-center space-x-3">
+          <button class="trigger-booking-modal btn-gold px-5 py-2.5 rounded-xl font-bold text-sm flex items-center space-x-2">
+            <span>Book a Free Trial</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </button>
+        </div>
+
+        <!-- Mobile Hamburger Toggle -->
+        <div class="flex lg:hidden items-center space-x-2">
+          <button class="trigger-booking-modal btn-gold px-3.5 py-1.5 rounded-lg font-bold text-xs">
+            Free Trial
+          </button>
+          <button id="mobileMenuToggle" class="p-2 rounded-lg text-slate-700 hover:text-emerald-800 hover:bg-slate-100 focus:outline-none" aria-label="Open navigation menu">
+            <i data-lucide="menu" class="w-6 h-6"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div id="mobileDrawer" class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm hidden">
+    <div class="fixed right-0 top-0 bottom-0 w-80 max-w-full bg-white shadow-2xl p-6 flex flex-col justify-between overflow-y-auto">
+      <div>
+        <div class="flex items-center justify-between pb-6 border-b border-slate-100">
+          <div class="flex items-center space-x-2">
+            <div class="w-9 h-9 rounded-xl bg-emerald-900 flex items-center justify-center text-gold-400 font-bold">
+              📖
+            </div>
+            <div>
+              <div class="font-bold text-emerald-950">Noor Al-Huda</div>
+              <div class="text-xs font-arabic text-emerald-700">نور الهدى</div>
+            </div>
+          </div>
+          <button id="closeDrawer" class="p-2 text-slate-400 hover:text-slate-700">
+            <i data-lucide="x" class="w-6 h-6"></i>
+          </button>
+        </div>
+
+        <div class="flex flex-col space-y-4 mt-6 text-base font-semibold text-slate-800">
+          <a href="#courses" class="drawer-link py-2 border-b border-slate-50 hover:text-emerald-700">Core Courses</a>
+          <a href="#how-it-works" class="drawer-link py-2 border-b border-slate-50 hover:text-emerald-700">How It Works</a>
+          <a href="#why-us" class="drawer-link py-2 border-b border-slate-50 hover:text-emerald-700">Why Choose Us</a>
+          <a href="#tutors" class="drawer-link py-2 border-b border-slate-50 hover:text-emerald-700">Certified Tutors</a>
+          <a href="#pricing" class="drawer-link py-2 border-b border-slate-50 hover:text-emerald-700">Monthly Plans</a>
+          <a href="#testimonials" class="drawer-link py-2 border-b border-slate-50 hover:text-emerald-700">Parent Testimonials</a>
+          <a href="#faq" class="drawer-link py-2 border-b border-slate-50 hover:text-emerald-700">Frequently Asked Questions</a>
+          <a href="#contact" class="drawer-link py-2 hover:text-emerald-700">Contact Academy</a>
+        </div>
+      </div>
+
+      <div class="pt-6 border-t border-slate-100">
+        <button class="trigger-booking-modal w-full btn-gold py-3 rounded-xl font-bold text-center block mb-3">
+          Book Free Trial (3 Days)
+        </button>
+        <p class="text-xs text-center text-slate-500">No credit card required. 100% free evaluation.</p>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- ================= SECTION 2: HERO SECTION ================= -->
+    <section class="relative overflow-hidden pt-8 pb-20 lg:pt-14 lg:pb-28 islamic-pattern-light">
+      
+      <!-- Subtle Decorative Elements -->
+      <div class="absolute top-0 right-1/4 w-96 h-96 bg-emerald-100/50 rounded-full blur-3xl -z-10 pointer-events-none"></div>
+      <div class="absolute bottom-10 left-10 w-80 h-80 bg-gold-100/60 rounded-full blur-3xl -z-10 pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <!-- Left Column: Copy & CTAs -->
+          <div class="lg:col-span-7 space-y-6">
+            
+            <!-- Bismillah Header & Greeting Badge -->
+            <div class="space-y-2">
+              <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full gold-badge text-xs sm:text-sm font-semibold">
+                <span class="font-arabic text-sm text-gold-600">أهلاً وسهلاً</span>
+                <span class="text-slate-400">•</span>
+                <span class="text-amber-900">Welcome to Noor Al-Huda Academy</span>
+              </div>
+              <div class="font-arabic text-2xl sm:text-3xl text-emerald-900 font-bold tracking-wide pt-1">
+                بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
+              </div>
+            </div>
+
+            <!-- Main Headline -->
+            <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-[1.18]">
+              Nurturing Hearts & Minds with the <span class="emerald-gradient-text">Divine Words</span> of the Holy Quran
+            </h1>
+
+            <!-- Value Proposition Subtitle -->
+            <p class="text-base sm:text-lg text-slate-600 leading-relaxed font-normal max-w-2xl">
+              Authentic, structured <strong>1-on-1 live online classes</strong> tailored for children, sisters, and adults worldwide. Learn Noorani Qaida, Tajweed, and Hifz from certified Al-Azhar & Ijazah-certified tutors at your own pace and time zone.
+            </p>
+
+            <!-- Action CTAs -->
+            <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
+              <button class="trigger-booking-modal btn-gold px-8 py-4 rounded-xl text-base font-bold flex items-center justify-center space-x-3 shadow-lg">
+                <i data-lucide="calendar-check" class="w-5 h-5"></i>
+                <span>Start Free 3-Day Trial</span>
+              </button>
+              <a href="#courses" class="px-6 py-4 rounded-xl text-base font-semibold text-emerald-900 bg-white border border-emerald-200 hover:bg-emerald-50 hover:border-emerald-300 transition-all flex items-center justify-center space-x-2 shadow-sm">
+                <span>Explore Courses & Syllabus</span>
+                <i data-lucide="chevron-down" class="w-4 h-4 text-emerald-700"></i>
+              </a>
+            </div>
+
+            <!-- Trust Badges List -->
+            <div class="pt-6 border-t border-slate-200/80 grid grid-cols-2 sm:grid-cols-3 gap-4 text-xs font-semibold text-slate-700">
+              <div class="flex items-center space-x-2">
+                <div class="w-7 h-7 rounded-lg bg-emerald-100 text-emerald-800 flex items-center justify-center shrink-0">
+                  <i data-lucide="award" class="w-4 h-4"></i>
+                </div>
+                <span>Certified Hafiz & Ijazah Tutors</span>
+              </div>
+
+              <div class="flex items-center space-x-2">
+                <div class="w-7 h-7 rounded-lg bg-emerald-100 text-emerald-800 flex items-center justify-center shrink-0">
+                  <i data-lucide="user-check" class="w-4 h-4"></i>
+                </div>
+                <span>1-on-1 Dedicated Male & Female Tutors</span>
+              </div>
+
+              <div class="flex items-center space-x-2 col-span-2 sm:col-span-1">
+                <div class="w-7 h-7 rounded-lg bg-emerald-100 text-emerald-800 flex items-center justify-center shrink-0">
+                  <i data-lucide="clock" class="w-4 h-4"></i>
+                </div>
+                <span>100% Flexible 24/7 Global Schedules</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right Column: Interactive Classroom & Tajweed Recitation Player Preview -->
+          <div class="lg:col-span-5">
+            <div class="relative bg-white rounded-3xl p-6 sm:p-7 shadow-xl border border-slate-200/90 arch-card">
+              
+              <!-- Card Header: Live Classroom Simulator Badge -->
+              <div class="flex items-center justify-between pb-4 border-b border-slate-100">
+                <div class="flex items-center space-x-2.5">
+                  <div class="relative flex">
+                    <span class="animate-ping absolute inline-flex h-3 w-3 rounded-full bg-emerald-400 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-600"></span>
+                  </div>
+                  <span class="text-xs font-bold uppercase tracking-wider text-emerald-900">1-on-1 Live Session Preview</span>
+                </div>
+                <span class="text-xs px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-800 font-semibold border border-emerald-200">
+                  Zoom / Google Meet
+                </span>
+              </div>
+
+              <!-- Live Tajweed Verse Recitation Demo -->
+              <div class="mt-5 p-5 bg-gradient-to-b from-emerald-950 to-emerald-900 text-white rounded-2xl relative overflow-hidden shadow-inner">
+                <!-- Quranic Star Watermark -->
+                <div class="absolute -right-6 -bottom-6 opacity-10 pointer-events-none">
+                  <svg class="w-36 h-36 text-white" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2l2.4 5.3 5.8.5-4.4 3.9 1.3 5.7-5.1-3-5.1 3 1.3-5.7-4.4-3.9 5.8-.5L12 2z"/>
+                  </svg>
+                </div>
+
+                <div class="text-xs font-bold uppercase tracking-widest text-gold-400 mb-2 flex items-center justify-between">
+                  <span>Surah Al-Fatiha (Verses 1-4)</span>
+                  <span class="text-[11px] font-normal text-emerald-200 font-sans">Tajweed Color-Coded</span>
+                </div>
+
+                <!-- Calligraphic Verse Display with Tashkeel & Tajweed highlights -->
+                <div class="text-right font-quran text-xl sm:text-2xl text-emerald-50 leading-loose py-2 select-none" dir="rtl">
+                  بِسْمِ اللَّـهِ <span class="tajweed-ghunnah">الرَّحْمَـٰنِ</span> الرَّحِيمِ ﴿١﴾<br>
+                  الْحَمْدُ لِلَّـهِ رَبِّ الْعَالَمِينَ ﴿٢﴾ <span class="tajweed-madd">الرَّحْمَـٰنِ</span> الرَّحِيمِ ﴿٣﴾<br>
+                  <span class="tajweed-qalqalah">مَالِكِ</span> يَوْمِ الدِّينِ ﴿٤﴾
+                </div>
+
+                <!-- Tajweed Legend -->
+                <div class="mt-3 pt-3 border-t border-emerald-800/80 flex flex-wrap gap-2 text-[11px] text-emerald-200">
+                  <span class="inline-flex items-center"><span class="w-2 h-2 rounded-full bg-emerald-400 mr-1"></span> Ghunnah / Soft</span>
+                  <span class="inline-flex items-center"><span class="w-2 h-2 rounded-full bg-amber-400 mr-1"></span> Qalqalah</span>
+                  <span class="inline-flex items-center"><span class="w-2 h-2 rounded-full bg-red-400 mr-1"></span> Madd (Elongation)</span>
+                </div>
+
+                <!-- Audio Player Control Bar -->
+                <div class="mt-4 pt-3 border-t border-emerald-800 flex items-center justify-between gap-3">
+                  <button id="heroPlayAudioBtn" class="flex items-center space-x-2 px-3.5 py-2 rounded-xl bg-gold-500 hover:bg-gold-400 text-emerald-950 font-bold text-xs transition-colors shadow">
+                    <span id="audioPlayIcon" class="flex items-center"><i data-lucide="volume-2" class="w-4 h-4 mr-1"></i> Listen Recitation</span>
+                    <span id="audioPauseIcon" class="hidden items-center"><i data-lucide="pause" class="w-4 h-4 mr-1"></i> Pause</span>
+                  </button>
+
+                  <!-- Wave Visualizer Simulation -->
+                  <div id="audioWaveVisualizer" class="flex items-center space-x-1 opacity-40 transition-opacity">
+                    <div class="w-1 bg-gold-400 rounded-full wave-bar"></div>
+                    <div class="w-1 bg-gold-400 rounded-full wave-bar"></div>
+                    <div class="w-1 bg-gold-400 rounded-full wave-bar"></div>
+                    <div class="w-1 bg-gold-400 rounded-full wave-bar"></div>
+                    <div class="w-1 bg-gold-400 rounded-full wave-bar"></div>
+                    <div class="w-1 bg-gold-400 rounded-full wave-bar"></div>
+                  </div>
+
+                  <span id="audioDurationText" class="text-[11px] text-emerald-300 font-mono">0:00 / 0:42</span>
+                </div>
+
+                <!-- Audio Progress Bar Line -->
+                <div class="w-full bg-emerald-900 h-1.5 rounded-full mt-2.5 overflow-hidden">
+                  <div id="audioProgressBar" class="bg-gold-400 h-full w-0 transition-all duration-200"></div>
+                </div>
+
+              </div>
+
+              <!-- Interactive Dynamic Tajweed Tip -->
+              <div id="tajweedRuleTip" class="mt-3.5 p-3 rounded-xl bg-amber-50 border border-amber-200 text-xs text-amber-950 leading-relaxed">
+                <strong>Tajweed Highlight:</strong> Every student receives 1-on-1 personalized correction on mouth articulation, breath control, and proper letter characteristics.
+              </div>
+
+              <!-- Social Proof / Satisfaction Micro-Badge -->
+              <div class="mt-4 pt-4 border-t border-slate-100 flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                  <div class="flex -space-x-2">
+                    <img class="inline-block h-8 w-8 rounded-full ring-2 ring-white object-cover" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&auto=format&fit=crop&q=80" alt="Student">
+                    <img class="inline-block h-8 w-8 rounded-full ring-2 ring-white object-cover" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&auto=format&fit=crop&q=80" alt="Student">
+                    <img class="inline-block h-8 w-8 rounded-full ring-2 ring-white object-cover" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100&auto=format&fit=crop&q=80" alt="Student">
+                  </div>
+                  <div class="text-xs">
+                    <div class="font-bold text-slate-800">1,450+ Active Students</div>
+                    <div class="text-slate-500 text-[11px]">USA, UK, Canada & Worldwide</div>
+                  </div>
+                </div>
+                <div class="flex items-center text-xs font-bold text-emerald-800 bg-emerald-50 px-2.5 py-1.5 rounded-lg border border-emerald-100">
+                  <i data-lucide="star" class="w-3.5 h-3.5 text-amber-500 fill-amber-500 mr-1"></i>
+                  4.98 / 5.0
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TRUST METRICS COUNTER ================= -->
+    <section class="bg-emerald-900 text-white py-10 border-y border-emerald-800/60">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+          <div class="p-3">
+            <div class="text-3xl sm:text-4xl font-extrabold text-gold-400 font-sans">1,450+</div>
+            <div class="text-xs sm:text-sm text-emerald-200 mt-1 font-medium">Students Enrolled Worldwide</div>
+          </div>
+          <div class="p-3">
+            <div class="text-3xl sm:text-4xl font-extrabold text-gold-400 font-sans">99.2%</div>
+            <div class="text-xs sm:text-sm text-emerald-200 mt-1 font-medium">Parent & Student Satisfaction</div>
+          </div>
+          <div class="p-3">
+            <div class="text-3xl sm:text-4xl font-extrabold text-gold-400 font-sans">35+</div>
+            <div class="text-xs sm:text-sm text-emerald-200 mt-1 font-medium">Certified Hafiz & Qari Mentors</div>
+          </div>
+          <div class="p-3">
+            <div class="text-3xl sm:text-4xl font-extrabold text-gold-400 font-sans">18+</div>
+            <div class="text-xs sm:text-sm text-emerald-200 mt-1 font-medium">Countries & All Time Zones</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SECTION 3: COURSES GRID ================= -->
+    <section id="courses" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Header -->
+        <div class="text-center max-w-3xl mx-auto mb-12">
+          <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full emerald-badge text-xs font-bold uppercase tracking-wider mb-3">
+            <i data-lucide="book-open" class="w-3.5 h-3.5"></i>
+            <span>Structured Curriculum</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+            Comprehensive Quranic & Islamic Courses
+          </h2>
+          <p class="text-slate-600 mt-3 text-base sm:text-lg">
+            From the basics of Arabic letters to advanced memorization and contemplation. Select a course tailored to your age, current level, and spiritual goals.
+          </p>
+
+          <!-- Course Filter Buttons -->
+          <div class="flex flex-wrap justify-center gap-2 mt-8">
+            <button data-filter="all" class="course-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all bg-emerald-800 text-white shadow-sm">
+              All Courses
+            </button>
+            <button data-filter="kids" class="course-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all bg-emerald-50 text-emerald-900 hover:bg-emerald-100">
+              Kids & Beginners
+            </button>
+            <button data-filter="tajweed" class="course-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all bg-emerald-50 text-emerald-900 hover:bg-emerald-100">
+              Tajweed & Recitation
+            </button>
+            <button data-filter="memorization" class="course-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all bg-emerald-50 text-emerald-900 hover:bg-emerald-100">
+              Hifz Memorization
+            </button>
+            <button data-filter="adults" class="course-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all bg-emerald-50 text-emerald-900 hover:bg-emerald-100">
+              Teens & Adults (Tafseer)
+            </button>
+          </div>
+        </div>
+
+        <!-- Course Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          
+          <!-- Course 1: Noorani Qaida -->
+          <div class="course-card bg-[#faf9f5] rounded-3xl p-6 border border-slate-200/90 hover-lift flex flex-col justify-between" data-category="kids">
+            <div>
+              <div class="flex justify-between items-start mb-4">
+                <span class="px-3 py-1 rounded-full text-xs font-bold bg-amber-100 text-amber-900 border border-amber-200">
+                  Beginner • Ages 4+
+                </span>
+                <span class="font-arabic text-emerald-800 text-lg font-bold">القاعدة النورانية</span>
+              </div>
+              <h3 class="text-xl font-bold text-slate-900 mb-2">Noorani Qaida</h3>
+              <p class="text-xs font-semibold text-emerald-700 mb-3">Foundation & Arabic Pronunciation</p>
+              <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                The proven foundation for beginners. Master Arabic alphabet recognition, Makharij (origin of sounds), joining letters, and short/long vowels.
+              </p>
+              
+              <!-- Course Highlights -->
+              <ul class="space-y-2 mb-6 text-xs text-slate-700">
+                <li class="flex items-center"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600 mr-2 shrink-0"></i> Accurate letter articulation & phonetics</li>
+                <li class="flex items-center"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600 mr-2 shrink-0"></i> Digital interactive color-coded book</li>
+                <li class="flex items-center"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600 mr-2 shrink-0"></i> Gentle, patient female & male teachers</li>
+              </ul>
+            </div>
+
+            <div class="pt-4 border-t border-slate-200 flex items-center justify-between gap-2">
+              <button data-course-id="qaida" class="btn-view-syllabus text-xs font-bold text-emerald-800 hover:text-emerald-950 flex items-center py-2 px-3 rounded-lg hover:bg-emerald-50 transition-colors">
+                <span>View Syllabus</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5 ml-1"></i>
+              </button>
+              <button data-course="Noorani Qaida" class="trigger-booking-modal btn-emerald text-xs px-4 py-2.5 rounded-xl font-bold">
+                Book Trial
+              </button>
+            </div>
+          </div>
+
+          <!-- Course 2: Quran Reading with Tajweed -->
+          <div class="course-card bg-[#faf9f5] rounded-3xl p-6 border-2 border-emerald-700/60 hover-lift relative flex flex-col justify-between shadow-sm" data-category="tajweed">
+            <div class="absolute -top-3.5 right-6 px-3 py-1 rounded-full text-xs font-extrabold bg-gold-500 text-emerald-950 shadow">
+              ★ Most Popular Track
+            </div>
+            <div>
+              <div class="flex justify-between items-start mb-4 mt-1">
+                <span class="px-3 py-1 rounded-full text-xs font-bold bg-emerald-100 text-emerald-900 border border-emerald-200">
+                  All Ages • Intermediate
+                </span>
+                <span class="font-arabic text-emerald-800 text-lg font-bold">تلاوة بالتجويد</span>
+              </div>
+              <h3 class="text-xl font-bold text-slate-900 mb-2">Quran Reading with Tajweed</h3>
+              <p class="text-xs font-semibold text-emerald-700 mb-3">Fluent, Reverent & Melodious Recitation</p>
+              <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                Recite the Quran with beauty and precision. Covers rules of Nun Sakinah, Tanween, Madd, Waqf (stopping signs), and elimination of recitation errors.
+              </p>
+              
+              <!-- Course Highlights -->
+              <ul class="space-y-2 mb-6 text-xs text-slate-700">
+                <li class="flex items-center"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600 mr-2 shrink-0"></i> Hafs ‘an ‘Asim standard recitation</li>
+                <li class="flex items-center"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600 mr-2 shrink-0"></i> Practical correction of hidden mistakes</li>
+                <li class="flex items-center"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600 mr-2 shrink-0"></i> Fluency & melodic voice training</li>
+              </ul>
+            </div>
+
+            <div class="pt-4 border-t border-slate-200 flex items-center justify-between gap-2">
+              <button data-course-id="tajweed" class="btn-view-syllabus text-xs font-bold text-emerald-800 hover:text-emerald-950 flex items-center py-2 px-3 rounded-lg hover:bg-emerald-50 transition-colors">
+                <span>View Syllabus</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5 ml-1"></i>
+              </button>
+              <button data-course="Quran Reading with Tajweed" class="trigger-booking-modal btn-gold text-xs px-4 py-2.5 rounded-xl font-bold">
+                Book Trial
+              </button>
+            </div>
+          </div>
+
+          <!-- Course 3: Hifz-ul-Quran -->
+          <div class="course-card bg-[#faf9f5] rounded-3xl p-6 border border-slate-200/90 hover-lift flex flex-col justify-between" data-category="memorization">
+            <div>
+              <div class="flex justify-between items-start mb-4">
+                <span class="px-3 py-1 rounded-full text-xs font-bold bg-purple-100 text-purple-900 border border-purple-200">
+                  Dedicated Track • All Levels
+                </span>
+                <span class="font-arabic text-emerald-800 text-lg font-bold">تحفيظ القرآن الكريم</span>
+              </div>
+              <h3 class="text-xl font-bold text-slate-900 mb-2">Hifz-ul-Quran</h3>
+              <p class="text-xs font-semibold text-emerald-700 mb-3">Quran Memorization & Long-term Retention</p>
+              <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                Engrave the Noble Quran into your memory. Structured schedules using the Sabaq, Sabqi, and Manzil method under certified Hafiz faculty.
+              </p>
+              
+              <!-- Course Highlights -->
+              <ul class="space-y-2 mb-6 text-xs text-slate-700">
+                <li class="flex items-center"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600 mr-2 shrink-0"></i> Full 30 Ajza’ or Selected Surahs options</li>
+                <li class="flex items-center"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600 mr-2 shrink-0"></i> Daily revision techniques & memory retention</li>
+                <li class="flex items-center"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600 mr-2 shrink-0"></i> Formal Sanad/Ijazah path upon completion</li>
+              </ul>
+            </div>
+
+            <div class="pt-4 border-t border-slate-200 flex items-center justify-between gap-2">
+              <button data-course-id="hifz" class="btn-view-syllabus text-xs font-bold text-emerald-800 hover:text-emerald-950 flex items-center py-2 px-3 rounded-lg hover:bg-emerald-50 transition-colors">
+                <span>View Syllabus</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5 ml-1"></i>
+              </button>
+              <button data-course="Hifz-ul-Quran" class="trigger-booking-modal btn-emerald text-xs px-4 py-2.5 rounded-xl font-bold">
+                Book Trial
+              </button>
+            </div>
+          </div>
+
+          <!-- Course 4: Daily Duas & Islamic Etiquette -->
+          <div class="course-card bg-[#faf9f5] rounded-3xl p-6 border border-slate-200/90 hover-lift flex flex-col justify-between" data-category="kids">
+            <div>
+              <div class="flex justify-between items-start mb-4">
+                <span class="px-3 py-1 rounded-full text-xs font-bold bg-blue-100 text-blue-900 border border-blue-200">
+                  Kids Ages 5–14
+                </span>
+                <span class="font-arabic text-emerald-800 text-lg font-bold">الأدعية والآداب</span>
+              </div>
+              <h3 class="text-xl font-bold text-slate-900 mb-2">Daily Duas & Islamic Etiquette</h3>
+              <p class="text-xs font-semibold text-emerald-700 mb-3">Prayer, Character (Akhlaq) & Stories</p>
+              <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                Inspire young hearts with living Islam. Learn the step-by-step method of Salah, essential Masnoon morning/evening supplications, and Prophet stories.
+              </p>
+              
+              <!-- Course Highlights -->
+              <ul class="space-y-2 mb-6 text-xs text-slate-700">
+                <li class="flex items-center"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600 mr-2 shrink-0"></i> Step-by-step Salah & Wudu practice</li>
+                <li class="flex items-center"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600 mr-2 shrink-0"></i> 40 Short Hadiths on manners & kindness</li>
+                <li class="flex items-center"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600 mr-2 shrink-0"></i> Beautiful illustrated activity workbooks</li>
+              </ul>
+            </div>
+
+            <div class="pt-4 border-t border-slate-200 flex items-center justify-between gap-2">
+              <button data-course-id="duas" class="btn-view-syllabus text-xs font-bold text-emerald-800 hover:text-emerald-950 flex items-center py-2 px-3 rounded-lg hover:bg-emerald-50 transition-colors">
+                <span>View Syllabus</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5 ml-1"></i>
+              </button>
+              <button data-course="Daily Duas & Islamic Etiquette" class="trigger-booking-modal btn-emerald text-xs px-4 py-2.5 rounded-xl font-bold">
+                Book Trial
+              </button>
+            </div>
+          </div>
+
+          <!-- Course 5: Tafseer & Quranic Arabic Basics -->
+          <div class="course-card bg-[#faf9f5] rounded-3xl p-6 border border-slate-200/90 hover-lift flex flex-col justify-between" data-category="adults">
+            <div>
+              <div class="flex justify-between items-start mb-4">
+                <span class="px-3 py-1 rounded-full text-xs font-bold bg-emerald-100 text-emerald-900 border border-emerald-200">
+                  Teens & Adults
+                </span>
+                <span class="font-arabic text-emerald-800 text-lg font-bold">التفسير والعربية</span>
+              </div>
+              <h3 class="text-xl font-bold text-slate-900 mb-2">Tafseer & Quranic Arabic</h3>
+              <p class="text-xs font-semibold text-emerald-700 mb-3">Vocabulary, Grammar & Deep Contemplation</p>
+              <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                Understand the Quran directly in prayer. Learn high-frequency Quranic vocabulary, core Arabic roots, and spiritual reflection (Tadabbur) on selected Surahs.
+              </p>
+              
+              <!-- Course Highlights -->
+              <ul class="space-y-2 mb-6 text-xs text-slate-700">
+                <li class="flex items-center"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600 mr-2 shrink-0"></i> 300 words comprising 70% of Quranic text</li>
+                <li class="flex items-center"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600 mr-2 shrink-0"></i> Asbab an-Nuzul (historical contexts)</li>
+                <li class="flex items-center"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600 mr-2 shrink-0"></i> Dedicated sister halaqas available</li>
+              </ul>
+            </div>
+
+            <div class="pt-4 border-t border-slate-200 flex items-center justify-between gap-2">
+              <button data-course-id="tafseer" class="btn-view-syllabus text-xs font-bold text-emerald-800 hover:text-emerald-950 flex items-center py-2 px-3 rounded-lg hover:bg-emerald-50 transition-colors">
+                <span>View Syllabus</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5 ml-1"></i>
+              </button>
+              <button data-course="Tafseer & Quranic Arabic Basics" class="trigger-booking-modal btn-emerald text-xs px-4 py-2.5 rounded-xl font-bold">
+                Book Trial
+              </button>
+            </div>
+          </div>
+
+          <!-- Custom / Sibling Guidance Card -->
+          <div class="bg-gradient-to-br from-emerald-900 to-emerald-950 text-white rounded-3xl p-6 flex flex-col justify-between shadow-lg relative overflow-hidden">
+            <div class="space-y-3">
+              <div class="inline-flex items-center px-3 py-1 rounded-full bg-gold-500/20 text-gold-300 text-xs font-bold border border-gold-500/30">
+                Personalized Consultation
+              </div>
+              <h3 class="text-xl font-bold text-white">Not sure which course is right for your child?</h3>
+              <p class="text-xs text-emerald-200 leading-relaxed">
+                Take our free 30-minute diagnostic session. Our Senior Academic Dean will assess your current reading level and recommend the ideal personalized learning roadmap.
+              </p>
+              <div class="pt-3 space-y-2 text-xs text-emerald-100">
+                <div class="flex items-center"><i data-lucide="sparkles" class="w-4 h-4 text-gold-400 mr-2"></i> Free 3-Day Evaluation Period</div>
+                <div class="flex items-center"><i data-lucide="sparkles" class="w-4 h-4 text-gold-400 mr-2"></i> No Credit Card Required to Begin</div>
+                <div class="flex items-center"><i data-lucide="sparkles" class="w-4 h-4 text-gold-400 mr-2"></i> Male & Female Tutors Available</div>
+              </div>
+            </div>
+
+            <div class="pt-6">
+              <button class="trigger-booking-modal w-full btn-gold py-3 rounded-xl font-bold text-xs uppercase tracking-wider text-center block">
+                Request Free Assessment
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= SECTION 4: HOW IT WORKS ================= -->
+    <section id="how-it-works" class="py-20 bg-[#faf9f5] border-t border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Header -->
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full emerald-badge text-xs font-bold uppercase tracking-wider mb-3">
+            <i data-lucide="compass" class="w-3.5 h-3.5"></i>
+            <span>3 Simple Steps</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+            How to Begin Your Quran Journey
+          </h2>
+          <p class="text-slate-600 mt-3 text-base sm:text-lg">
+            Starting with Noor Al-Huda is effortless. Experience our teaching quality before making any commitment.
+          </p>
+        </div>
+
+        <!-- 3 Step Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
+          
+          <!-- Step 1 -->
+          <div class="bg-white rounded-3xl p-8 border border-slate-200/90 shadow-sm relative hover-lift">
+            <div class="w-14 h-14 rounded-2xl bg-emerald-100 text-emerald-900 font-extrabold text-xl flex items-center justify-center mb-6 border border-emerald-200">
+              01
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-3">Book Free Trial Class</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+              Fill out our simple 60-second trial form. Pick your preferred days, times, and specify whether you prefer a male or female teacher.
+            </p>
+            <div class="text-xs text-emerald-700 font-semibold flex items-center">
+              <i data-lucide="check" class="w-4 h-4 mr-1 text-emerald-600"></i> No credit card or contract needed
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="bg-white rounded-3xl p-8 border border-slate-200/90 shadow-sm relative hover-lift">
+            <div class="w-14 h-14 rounded-2xl bg-gold-100 text-gold-700 font-extrabold text-xl flex items-center justify-center mb-6 border border-gold-200">
+              02
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-3">Get Matched with Tutor</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+              We pair the student with an Ijazah-certified tutor who aligns with the student’s age, native language, and learning speed.
+            </p>
+            <div class="text-xs text-emerald-700 font-semibold flex items-center">
+              <i data-lucide="check" class="w-4 h-4 mr-1 text-emerald-600"></i> Level assessment & custom lesson plan
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="bg-white rounded-3xl p-8 border border-slate-200/90 shadow-sm relative hover-lift">
+            <div class="w-14 h-14 rounded-2xl bg-emerald-900 text-gold-400 font-extrabold text-xl flex items-center justify-center mb-6 border border-gold-500/40">
+              03
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-3">Start 1-on-1 Classes</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+              Join your live 30-minute classes via Zoom or Google Meet. Receive digital course materials, practice exercises, and monthly progress logs.
+            </p>
+            <div class="text-xs text-emerald-700 font-semibold flex items-center">
+              <i data-lucide="check" class="w-4 h-4 mr-1 text-emerald-600"></i> Flexible makeup classes if you travel
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Virtual Classroom Features Showcase Banner -->
+        <div class="mt-14 p-8 rounded-3xl bg-emerald-950 text-white border border-emerald-900 islamic-pattern-bg">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
+            <div class="flex items-center space-x-4">
+              <div class="w-12 h-12 rounded-xl bg-emerald-800 text-gold-400 flex items-center justify-center shrink-0 border border-emerald-700">
+                <i data-lucide="video" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-base text-white">Interactive HD Video</h4>
+                <p class="text-xs text-emerald-200 mt-0.5">Screen-shared digital Mushaf with live digital pen highlighting.</p>
+              </div>
+            </div>
+
+            <div class="flex items-center space-x-4">
+              <div class="w-12 h-12 rounded-xl bg-emerald-800 text-gold-400 flex items-center justify-center shrink-0 border border-emerald-700">
+                <i data-lucide="shield-check" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-base text-white">Safe & Child Monitored</h4>
+                <p class="text-xs text-emerald-200 mt-0.5">Parents can attend, observe, or review monthly audio recordings.</p>
+              </div>
+            </div>
+
+            <div class="flex items-center space-x-4">
+              <div class="w-12 h-12 rounded-xl bg-emerald-800 text-gold-400 flex items-center justify-center shrink-0 border border-emerald-700">
+                <i data-lucide="calendar" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-base text-white">Rescheduling Ease</h4>
+                <p class="text-xs text-emerald-200 mt-0.5">Easily notify your tutor 4 hours prior to reschedule missed classes.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= SECTION 5: WHY CHOOSE US ================= -->
+    <section id="why-us" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <!-- Left Column: Key Highlights Grid -->
+          <div class="lg:col-span-7 space-y-6">
+            <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full emerald-badge text-xs font-bold uppercase tracking-wider">
+              <i data-lucide="check-check" class="w-3.5 h-3.5"></i>
+              <span>The Noor Al-Huda Distinction</span>
+            </div>
+            
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight">
+              Why Discerning Parents & Learners Trust Noor Al-Huda Worldwide
+            </h2>
+            
+            <p class="text-slate-600 text-base leading-relaxed">
+              We understand that choosing an online Quran teacher is a sacred decision. We combine classical scholarship with modern pedagogical techniques to nurture lifelong Quranic love.
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4">
+              
+              <div class="p-5 rounded-2xl bg-[#faf9f5] border border-slate-200">
+                <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-800 flex items-center justify-center mb-3">
+                  <i data-lucide="user" class="w-5 h-5"></i>
+                </div>
+                <h3 class="font-bold text-base text-slate-900 mb-1.5">1-on-1 Individual Attention</h3>
+                <p class="text-xs text-slate-600 leading-relaxed">
+                  No peer pressure and no waiting for other students. 100% of the tutor’s time is focused purely on your pronunciation and questions.
+                </p>
+              </div>
+
+              <div class="p-5 rounded-2xl bg-[#faf9f5] border border-slate-200">
+                <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-800 flex items-center justify-center mb-3">
+                  <i data-lucide="users" class="w-5 h-5"></i>
+                </div>
+                <h3 class="font-bold text-base text-slate-900 mb-1.5">Male & Female Tutors</h3>
+                <p class="text-xs text-slate-600 leading-relaxed">
+                  Dedicated female Alimah and Hafiza teachers for sisters and young daughters in complete privacy and comfort.
+                </p>
+              </div>
+
+              <div class="p-5 rounded-2xl bg-[#faf9f5] border border-slate-200">
+                <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-800 flex items-center justify-center mb-3">
+                  <i data-lucide="globe" class="w-5 h-5"></i>
+                </div>
+                <h3 class="font-bold text-base text-slate-900 mb-1.5">24/7 Global Time Zones</h3>
+                <p class="text-xs text-slate-600 leading-relaxed">
+                  Whether you are in New York, London, Toronto, Sydney, or Dubai, our faculty accommodates your family’s busy school and work schedule.
+                </p>
+              </div>
+
+              <div class="p-5 rounded-2xl bg-[#faf9f5] border border-slate-200">
+                <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-800 flex items-center justify-center mb-3">
+                  <i data-lucide="file-text" class="w-5 h-5"></i>
+                </div>
+                <h3 class="font-bold text-base text-slate-900 mb-1.5">Monthly Progress Reports</h3>
+                <p class="text-xs text-slate-600 leading-relaxed">
+                  Parents receive formal monthly evaluation summaries detailing attendance, verses memorized, Tajweed rules mastered, and areas to review.
+                </p>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Right Column: Visual Card Showcase with Noble Ayah -->
+          <div class="lg:col-span-5">
+            <div class="p-8 rounded-3xl bg-gradient-to-br from-emerald-950 via-emerald-900 to-emerald-950 text-white border border-gold-500/40 shadow-2xl relative">
+              <div class="text-center space-y-4">
+                
+                <!-- Bismillah Submark -->
+                <div class="font-arabic text-gold-400 text-xl font-bold">
+                  وَرَتِّلِ الْقُرْآنَ تَرْتِيلًا
+                </div>
+                
+                <p class="text-xs italic text-emerald-200 font-serif">
+                  "And recite the Quran with measured, harmonious recitation."
+                </p>
+                <div class="text-[11px] uppercase tracking-wider text-gold-400/80 font-mono">
+                  — Surah Al-Muzzammil (73:4)
+                </div>
+
+                <div class="my-6 border-t border-emerald-800"></div>
+
+                <!-- Academic Standards Guarantee -->
+                <div class="space-y-3 text-left">
+                  <div class="flex items-start space-x-3">
+                    <i data-lucide="check-circle" class="w-5 h-5 text-gold-400 shrink-0 mt-0.5"></i>
+                    <div>
+                      <div class="text-sm font-bold text-white">Vetted Through 4-Stage Interview</div>
+                      <div class="text-xs text-emerald-200">Only top 5% of applicant teachers with authentic Tajweed Ijazah are accepted.</div>
+                    </div>
+                  </div>
+
+                  <div class="flex items-start space-x-3">
+                    <i data-lucide="check-circle" class="w-5 h-5 text-gold-400 shrink-0 mt-0.5"></i>
+                    <div>
+                      <div class="text-sm font-bold text-white">Child Protection & Safety Certified</div>
+                      <div class="text-xs text-emerald-200">All sessions are conducted in a family-safe, respectful and monitored online setting.</div>
+                    </div>
+                  </div>
+
+                  <div class="flex items-start space-x-3">
+                    <i data-lucide="check-circle" class="w-5 h-5 text-gold-400 shrink-0 mt-0.5"></i>
+                    <div>
+                      <div class="text-sm font-bold text-white">Zero Obligation Trial</div>
+                      <div class="text-xs text-emerald-200">If you are not 100% happy with your tutor, we gladly match you with another instructor.</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="pt-6">
+                  <button class="trigger-booking-modal w-full btn-gold py-3.5 rounded-xl font-bold text-sm shadow-md">
+                    Claim Your 3 Free Trial Sessions
+                  </button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= SECTION 6: TUTORS & FACULTY SHOWCASE ================= -->
+    <section id="tutors" class="py-20 bg-[#faf9f5] border-t border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Header -->
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full emerald-badge text-xs font-bold uppercase tracking-wider mb-3">
+            <i data-lucide="graduation-cap" class="w-3.5 h-3.5"></i>
+            <span>Scholarly Faculty</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+            Meet Our Certified Quran Instructors
+          </h2>
+          <p class="text-slate-600 mt-3 text-base sm:text-lg">
+            Our faculty members hold formal degrees from prestigious Islamic institutions such as Al-Azhar University and Wifaq-ul-Madaris, with verified continuous chains of transmission (Sanad/Ijazah).
+          </p>
+        </div>
+
+        <!-- 4 Sample Tutor Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          <!-- Tutor 1: Ustadh Bilal -->
+          <div class="bg-white rounded-3xl p-5 border border-slate-200/90 shadow-sm hover-lift flex flex-col justify-between">
+            <div>
+              <div class="relative mb-4">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&auto=format&fit=crop&q=80" alt="Ustadh Bilal Ahmed" class="w-full h-48 object-cover rounded-2xl">
+                <span class="absolute top-3 right-3 px-2.5 py-1 rounded-full text-[11px] font-bold bg-emerald-900 text-gold-300 border border-gold-500/40">
+                  Ijazah Certified
+                </span>
+              </div>
+              <div class="flex justify-between items-start">
+                <div>
+                  <h3 class="text-lg font-bold text-slate-900">Ustadh Bilal Ahmed</h3>
+                  <div class="font-arabic text-emerald-800 text-xs font-bold">أستاذ بلال أحمد</div>
+                </div>
+              </div>
+              <p class="text-xs font-semibold text-emerald-700 mt-1">Senior Tajweed & Qira'at Faculty</p>
+              
+              <div class="mt-3 space-y-1.5 text-xs text-slate-600">
+                <div class="flex items-center"><i data-lucide="award" class="w-3.5 h-3.5 text-gold-600 mr-1.5 shrink-0"></i> Al-Azhar University Graduate</div>
+                <div class="flex items-center"><i data-lucide="clock" class="w-3.5 h-3.5 text-slate-400 mr-1.5 shrink-0"></i> 12+ Years Experience</div>
+                <div class="flex items-center"><i data-lucide="languages" class="w-3.5 h-3.5 text-slate-400 mr-1.5 shrink-0"></i> English & Arabic (Native)</div>
+              </div>
+
+              <!-- Rating & Students -->
+              <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+                <span class="font-bold text-amber-600 flex items-center">
+                  <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-500 mr-1"></i> 5.0 (184 reviews)
+                </span>
+                <span class="text-slate-500">420+ Students</span>
+              </div>
+            </div>
+
+            <div class="mt-5 pt-3 border-t border-slate-100 flex gap-2">
+              <button data-tutor-id="bilal" class="btn-view-tutor flex-1 py-2 rounded-xl text-xs font-semibold text-emerald-800 bg-emerald-50 hover:bg-emerald-100 transition-colors">
+                Profile
+              </button>
+              <button data-tutor="Ustadh Bilal Ahmed" class="trigger-booking-modal flex-1 btn-gold py-2 rounded-xl text-xs font-bold text-center">
+                Book Trial
+              </button>
+            </div>
+          </div>
+
+          <!-- Tutor 2: Ustadha Amina -->
+          <div class="bg-white rounded-3xl p-5 border border-slate-200/90 shadow-sm hover-lift flex flex-col justify-between">
+            <div>
+              <div class="relative mb-4">
+                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&auto=format&fit=crop&q=80" alt="Ustadha Amina Tariq" class="w-full h-48 object-cover rounded-2xl">
+                <span class="absolute top-3 right-3 px-2.5 py-1 rounded-full text-[11px] font-bold bg-amber-100 text-amber-900 border border-amber-300">
+                  Kids & Sisters Lead
+                </span>
+              </div>
+              <div class="flex justify-between items-start">
+                <div>
+                  <h3 class="text-lg font-bold text-slate-900">Ustadha Amina Tariq</h3>
+                  <div class="font-arabic text-emerald-800 text-xs font-bold">أستاذة أمينة طارق</div>
+                </div>
+              </div>
+              <p class="text-xs font-semibold text-emerald-700 mt-1">Noorani Qaida & Child Learning</p>
+              
+              <div class="mt-3 space-y-1.5 text-xs text-slate-600">
+                <div class="flex items-center"><i data-lucide="award" class="w-3.5 h-3.5 text-gold-600 mr-1.5 shrink-0"></i> Wifaq-ul-Madaris Al-Arabiyya</div>
+                <div class="flex items-center"><i data-lucide="clock" class="w-3.5 h-3.5 text-slate-400 mr-1.5 shrink-0"></i> 8+ Years Online Teaching</div>
+                <div class="flex items-center"><i data-lucide="languages" class="w-3.5 h-3.5 text-slate-400 mr-1.5 shrink-0"></i> English, Urdu & Arabic</div>
+              </div>
+
+              <!-- Rating & Students -->
+              <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+                <span class="font-bold text-amber-600 flex items-center">
+                  <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-500 mr-1"></i> 4.98 (210 reviews)
+                </span>
+                <span class="text-slate-500">350+ Students</span>
+              </div>
+            </div>
+
+            <div class="mt-5 pt-3 border-t border-slate-100 flex gap-2">
+              <button data-tutor-id="amina" class="btn-view-tutor flex-1 py-2 rounded-xl text-xs font-semibold text-emerald-800 bg-emerald-50 hover:bg-emerald-100 transition-colors">
+                Profile
+              </button>
+              <button data-tutor="Ustadha Amina Tariq" class="trigger-booking-modal flex-1 btn-gold py-2 rounded-xl text-xs font-bold text-center">
+                Book Trial
+              </button>
+            </div>
+          </div>
+
+          <!-- Tutor 3: Qari Yusuf -->
+          <div class="bg-white rounded-3xl p-5 border border-slate-200/90 shadow-sm hover-lift flex flex-col justify-between">
+            <div>
+              <div class="relative mb-4">
+                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&auto=format&fit=crop&q=80" alt="Qari Yusuf Mahmood" class="w-full h-48 object-cover rounded-2xl">
+                <span class="absolute top-3 right-3 px-2.5 py-1 rounded-full text-[11px] font-bold bg-emerald-900 text-gold-300 border border-gold-500/40">
+                  Head of Hifz Dept
+                </span>
+              </div>
+              <div class="flex justify-between items-start">
+                <div>
+                  <h3 class="text-lg font-bold text-slate-900">Qari Yusuf Mahmood</h3>
+                  <div class="font-arabic text-emerald-800 text-xs font-bold">القارئ يوسف محمود</div>
+                </div>
+              </div>
+              <p class="text-xs font-semibold text-emerald-700 mt-1">Memorization & Retention Coach</p>
+              
+              <div class="mt-3 space-y-1.5 text-xs text-slate-600">
+                <div class="flex items-center"><i data-lucide="award" class="w-3.5 h-3.5 text-gold-600 mr-1.5 shrink-0"></i> International Recitation Medalist</div>
+                <div class="flex items-center"><i data-lucide="clock" class="w-3.5 h-3.5 text-slate-400 mr-1.5 shrink-0"></i> 14+ Years Hifz Mentorship</div>
+                <div class="flex items-center"><i data-lucide="languages" class="w-3.5 h-3.5 text-slate-400 mr-1.5 shrink-0"></i> English, Arabic & Bengali</div>
+              </div>
+
+              <!-- Rating & Students -->
+              <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+                <span class="font-bold text-amber-600 flex items-center">
+                  <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-500 mr-1"></i> 5.0 (145 reviews)
+                </span>
+                <span class="text-slate-500">78 Huffaz</span>
+              </div>
+            </div>
+
+            <div class="mt-5 pt-3 border-t border-slate-100 flex gap-2">
+              <button data-tutor-id="yusuf" class="btn-view-tutor flex-1 py-2 rounded-xl text-xs font-semibold text-emerald-800 bg-emerald-50 hover:bg-emerald-100 transition-colors">
+                Profile
+              </button>
+              <button data-tutor="Qari Yusuf Mahmood" class="trigger-booking-modal flex-1 btn-gold py-2 rounded-xl text-xs font-bold text-center">
+                Book Trial
+              </button>
+            </div>
+          </div>
+
+          <!-- Tutor 4: Ustadha Maryam -->
+          <div class="bg-white rounded-3xl p-5 border border-slate-200/90 shadow-sm hover-lift flex flex-col justify-between">
+            <div>
+              <div class="relative mb-4">
+                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&auto=format&fit=crop&q=80" alt="Ustadha Maryam Siddiqui" class="w-full h-48 object-cover rounded-2xl">
+                <span class="absolute top-3 right-3 px-2.5 py-1 rounded-full text-[11px] font-bold bg-emerald-100 text-emerald-900 border border-emerald-300">
+                  Alimah & Tafseer
+                </span>
+              </div>
+              <div class="flex justify-between items-start">
+                <div>
+                  <h3 class="text-lg font-bold text-slate-900">Ustadha Maryam Siddiqui</h3>
+                  <div class="font-arabic text-emerald-800 text-xs font-bold">أستاذة مريم الصديقي</div>
+                </div>
+              </div>
+              <p class="text-xs font-semibold text-emerald-700 mt-1">Tafseer & Quranic Arabic Faculty</p>
+              
+              <div class="mt-3 space-y-1.5 text-xs text-slate-600">
+                <div class="flex items-center"><i data-lucide="award" class="w-3.5 h-3.5 text-gold-600 mr-1.5 shrink-0"></i> 7-Yr Classical Alimiyyah Degree</div>
+                <div class="flex items-center"><i data-lucide="clock" class="w-3.5 h-3.5 text-slate-400 mr-1.5 shrink-0"></i> 9+ Years Teaching</div>
+                <div class="flex items-center"><i data-lucide="languages" class="w-3.5 h-3.5 text-slate-400 mr-1.5 shrink-0"></i> English, Arabic & French</div>
+              </div>
+
+              <!-- Rating & Students -->
+              <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+                <span class="font-bold text-amber-600 flex items-center">
+                  <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-500 mr-1"></i> 4.97 (160 reviews)
+                </span>
+                <span class="text-slate-500">290+ Students</span>
+              </div>
+            </div>
+
+            <div class="mt-5 pt-3 border-t border-slate-100 flex gap-2">
+              <button data-tutor-id="maryam" class="btn-view-tutor flex-1 py-2 rounded-xl text-xs font-semibold text-emerald-800 bg-emerald-50 hover:bg-emerald-100 transition-colors">
+                Profile
+              </button>
+              <button data-tutor="Ustadha Maryam Siddiqui" class="trigger-booking-modal flex-1 btn-gold py-2 rounded-xl text-xs font-bold text-center">
+                Book Trial
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= SECTION 7: PRICING & PLANS ================= -->
+    <section id="pricing" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Header -->
+        <div class="text-center max-w-3xl mx-auto mb-12">
+          <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full emerald-badge text-xs font-bold uppercase tracking-wider mb-3">
+            <i data-lucide="tag" class="w-3.5 h-3.5"></i>
+            <span>Transparent & Affordable</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+            Flexible Monthly Learning Plans
+          </h2>
+          <p class="text-slate-600 mt-3 text-base sm:text-lg">
+            No long-term contracts. Pause, reschedule, or cancel at any time. All plans begin with a 100% free, no-obligation evaluation trial.
+          </p>
+
+          <!-- Interactive Currency Switcher -->
+          <div class="mt-6 inline-flex items-center bg-[#faf9f5] p-1.5 rounded-2xl border border-slate-200">
+            <span class="text-xs font-semibold text-slate-600 px-3">Currency:</span>
+            <select id="currencySelector" class="bg-white text-xs font-bold text-emerald-950 py-1.5 px-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-emerald-700">
+              <option value="USD">USD ($ - United States)</option>
+              <option value="GBP">GBP (£ - United Kingdom)</option>
+              <option value="EUR">EUR (€ - Europe)</option>
+              <option value="CAD">CAD (CA$ - Canada)</option>
+              <option value="AUD">AUD (AU$ - Australia)</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Pricing Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+          
+          <!-- Plan 1: 2 Days/Week -->
+          <div class="bg-[#faf9f5] rounded-3xl p-8 border border-slate-200/90 hover-lift flex flex-col justify-between">
+            <div>
+              <div class="flex justify-between items-center mb-4">
+                <span class="px-3 py-1 rounded-full text-xs font-bold bg-slate-200 text-slate-800">
+                  Starter Plan
+                </span>
+                <span class="text-xs text-slate-500 font-medium">8 Sessions / mo</span>
+              </div>
+              
+              <h3 class="text-2xl font-bold text-slate-900">2 Days / Week</h3>
+              <p class="text-xs text-slate-500 mt-1">Ideal for busy school students & working professionals</p>
+
+              <div class="my-6">
+                <div class="flex items-baseline">
+                  <span id="symbolStarter" class="text-2xl font-extrabold text-emerald-900 font-sans">$</span>
+                  <span id="priceStarter" class="text-5xl font-black text-emerald-950 tracking-tight font-sans">48</span>
+                  <span class="text-slate-500 text-sm ml-2">/ month</span>
+                </div>
+                <div class="text-xs text-emerald-700 font-semibold mt-1">30 minutes per 1-on-1 session</div>
+              </div>
+
+              <!-- Features list -->
+              <ul class="space-y-3 text-xs text-slate-700 pt-4 border-t border-slate-200">
+                <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-emerald-600 mr-2.5 shrink-0"></i> 1-on-1 Live Online Tutoring</li>
+                <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-emerald-600 mr-2.5 shrink-0"></i> Choice of Male or Female Tutor</li>
+                <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-emerald-600 mr-2.5 shrink-0"></i> Digital Course Books Included</li>
+                <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-emerald-600 mr-2.5 shrink-0"></i> Monthly Progress Report</li>
+                <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-emerald-600 mr-2.5 shrink-0"></i> Free Trial Period (3 Classes)</li>
+              </ul>
+            </div>
+
+            <div class="pt-8">
+              <button data-plan="Starter (2 Days/Week)" class="trigger-booking-modal w-full py-3.5 rounded-xl font-bold text-xs uppercase tracking-wider text-emerald-950 bg-white border border-slate-300 hover:bg-emerald-50 hover:border-emerald-300 transition-colors">
+                Select Starter Plan
+              </button>
+            </div>
+          </div>
+
+          <!-- Plan 2: 3 Days/Week (Most Popular) -->
+          <div class="bg-emerald-950 text-white rounded-3xl p-8 border-2 border-gold-500 shadow-xl relative hover-lift flex flex-col justify-between">
+            <div class="absolute -top-3.5 left-1/2 transform -translate-x-1/2 px-4 py-1 rounded-full text-xs font-black bg-gold-500 text-emerald-950 shadow">
+              ★ MOST RECOMMENDED FOR TAJWEED
+            </div>
+
+            <div>
+              <div class="flex justify-between items-center mb-4 mt-2">
+                <span class="px-3 py-1 rounded-full text-xs font-bold bg-gold-500/20 text-gold-300 border border-gold-500/30">
+                  Standard Plan
+                </span>
+                <span class="text-xs text-emerald-300 font-medium">12 Sessions / mo</span>
+              </div>
+              
+              <h3 class="text-2xl font-bold text-white">3 Days / Week</h3>
+              <p class="text-xs text-emerald-200 mt-1">Recommended for steady retention & regular recitation</p>
+
+              <div class="my-6">
+                <div class="flex items-baseline">
+                  <span id="symbolStandard" class="text-2xl font-extrabold text-gold-400 font-sans">$</span>
+                  <span id="priceStandard" class="text-5xl font-black text-white tracking-tight font-sans">68</span>
+                  <span class="text-emerald-300 text-sm ml-2">/ month</span>
+                </div>
+                <div class="text-xs text-gold-300 font-semibold mt-1">30 minutes per 1-on-1 session</div>
+              </div>
+
+              <!-- Features list -->
+              <ul class="space-y-3 text-xs text-emerald-100 pt-4 border-t border-emerald-900">
+                <li class="flex items-center"><i data-lucide="check-circle-2" class="w-4 h-4 text-gold-400 mr-2.5 shrink-0"></i> 1-on-1 Live Online Tutoring</li>
+                <li class="flex items-center"><i data-lucide="check-circle-2" class="w-4 h-4 text-gold-400 mr-2.5 shrink-0"></i> Flexible Rescheduling Window</li>
+                <li class="flex items-center"><i data-lucide="check-circle-2" class="w-4 h-4 text-gold-400 mr-2.5 shrink-0"></i> Tajweed & Duas Curriculum Combined</li>
+                <li class="flex items-center"><i data-lucide="check-circle-2" class="w-4 h-4 text-gold-400 mr-2.5 shrink-0"></i> Detailed Monthly Assessment & Quiz</li>
+                <li class="flex items-center"><i data-lucide="check-circle-2" class="w-4 h-4 text-gold-400 mr-2.5 shrink-0"></i> 10% Sibling Discount Applicable</li>
+              </ul>
+            </div>
+
+            <div class="pt-8">
+              <button data-plan="Standard (3 Days/Week)" class="trigger-booking-modal w-full btn-gold py-3.5 rounded-xl font-bold text-xs uppercase tracking-wider">
+                Select Standard Plan
+              </button>
+            </div>
+          </div>
+
+          <!-- Plan 3: 5 Days/Week (Intensive / Hifz) -->
+          <div class="bg-[#faf9f5] rounded-3xl p-8 border border-slate-200/90 hover-lift flex flex-col justify-between">
+            <div>
+              <div class="flex justify-between items-center mb-4">
+                <span class="px-3 py-1 rounded-full text-xs font-bold bg-purple-100 text-purple-900">
+                  Intensive / Hifz Track
+                </span>
+                <span class="text-xs text-slate-500 font-medium">20 Sessions / mo</span>
+              </div>
+              
+              <h3 class="text-2xl font-bold text-slate-900">5 Days / Week</h3>
+              <p class="text-xs text-slate-500 mt-1">Designed for Hifz memorization & accelerated Arabic</p>
+
+              <div class="my-6">
+                <div class="flex items-baseline">
+                  <span id="symbolIntensive" class="text-2xl font-extrabold text-emerald-900 font-sans">$</span>
+                  <span id="priceIntensive" class="text-5xl font-black text-emerald-950 tracking-tight font-sans">105</span>
+                  <span class="text-slate-500 text-sm ml-2">/ month</span>
+                </div>
+                <div class="text-xs text-emerald-700 font-semibold mt-1">30 minutes per 1-on-1 session</div>
+              </div>
+
+              <!-- Features list -->
+              <ul class="space-y-3 text-xs text-slate-700 pt-4 border-t border-slate-200">
+                <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-emerald-600 mr-2.5 shrink-0"></i> Daily Sabaq, Sabqi & Manzil Coaching</li>
+                <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-emerald-600 mr-2.5 shrink-0"></i> Senior Hafiz Mentor Assigned</li>
+                <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-emerald-600 mr-2.5 shrink-0"></i> Priority Time Slot Reservations</li>
+                <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-emerald-600 mr-2.5 shrink-0"></i> Fortnightly Dean Evaluation Oral Exam</li>
+                <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-emerald-600 mr-2.5 shrink-0"></i> Ijazah Certification Track</li>
+              </ul>
+            </div>
+
+            <div class="pt-8">
+              <button data-plan="Intensive (5 Days/Week)" class="trigger-booking-modal w-full py-3.5 rounded-xl font-bold text-xs uppercase tracking-wider text-emerald-950 bg-white border border-slate-300 hover:bg-emerald-50 hover:border-emerald-300 transition-colors">
+                Select Intensive Plan
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Family Discount Notice -->
+        <div class="mt-10 p-4 rounded-2xl bg-amber-50 border border-amber-200/80 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+          <div class="flex items-center space-x-3">
+            <span class="text-2xl">👨‍👩‍👧‍👦</span>
+            <div>
+              <div class="text-sm font-bold text-amber-950">Enrolling more than one child?</div>
+              <div class="text-xs text-amber-800">Enjoy an automatic <strong>10% Sibling & Family Discount</strong> for every additional student.</div>
+            </div>
+          </div>
+          <button class="trigger-booking-modal btn-emerald text-xs px-4 py-2 rounded-xl font-bold shrink-0">
+            Apply Family Discount
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= SECTION 8: TESTIMONIALS & REVIEWS ================= -->
+    <section id="testimonials" class="py-20 bg-[#faf9f5] border-t border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Header -->
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full emerald-badge text-xs font-bold uppercase tracking-wider mb-3">
+            <i data-lucide="message-square" class="w-3.5 h-3.5"></i>
+            <span>Verified Reviews</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+            Hear From Our Global Student Community
+          </h2>
+          <p class="text-slate-600 mt-3 text-base sm:text-lg">
+            Real experiences from parents, sisters, and adult students who have seen transformative results in their Quranic recitation.
+          </p>
+        </div>
+
+        <!-- Reviews Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <!-- Review 1: Parent in London -->
+          <div class="bg-white rounded-3xl p-7 border border-slate-200/90 shadow-sm hover-lift flex flex-col justify-between">
+            <div>
+              <div class="flex items-center space-x-1 text-amber-400 mb-4">
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              </div>
+              <p class="text-slate-700 text-sm leading-relaxed italic mb-6">
+                "Finding a female teacher with genuine warmth and patience for my 7-year-old daughter was our biggest worry in London. Ustadha Amina has made Noorani Qaida her favorite class of the week! My daughter now corrects our Makharij during family dinner."
+              </p>
+            </div>
+
+            <div class="pt-4 border-t border-slate-100 flex items-center space-x-3">
+              <div class="w-10 h-10 rounded-full bg-emerald-100 text-emerald-800 font-bold flex items-center justify-center text-sm">
+                FK
+              </div>
+              <div>
+                <div class="font-bold text-sm text-slate-900">Sister Fatima K.</div>
+                <div class="text-xs text-slate-500">London, United Kingdom • Mother of 2</div>
+                <div class="text-[11px] text-emerald-700 font-medium">Course: Noorani Qaida & Duas</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 2: Adult Student in Dallas -->
+          <div class="bg-white rounded-3xl p-7 border border-slate-200/90 shadow-sm hover-lift flex flex-col justify-between">
+            <div>
+              <div class="flex items-center space-x-1 text-amber-400 mb-4">
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              </div>
+              <p class="text-slate-700 text-sm leading-relaxed italic mb-6">
+                "As a 34-year-old professional who never learned Arabic as a child, I felt embarrassed to start. Ustadh Bilal immediately put me at ease. He treats adult learners with utmost dignity. Within 4 months, I am reciting Surah Al-Kahf with proper Tajweed."
+              </p>
+            </div>
+
+            <div class="pt-4 border-t border-slate-100 flex items-center space-x-3">
+              <div class="w-10 h-10 rounded-full bg-emerald-100 text-emerald-800 font-bold flex items-center justify-center text-sm">
+                OS
+              </div>
+              <div>
+                <div class="font-bold text-sm text-slate-900">Brother Omar S.</div>
+                <div class="text-xs text-slate-500">Dallas, Texas, USA • Software Engineer</div>
+                <div class="text-[11px] text-emerald-700 font-medium">Course: Quran Reading with Tajweed</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 3: Parent in Toronto -->
+          <div class="bg-white rounded-3xl p-7 border border-slate-200/90 shadow-sm hover-lift flex flex-col justify-between">
+            <div>
+              <div class="flex items-center space-x-1 text-amber-400 mb-4">
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              </div>
+              <p class="text-slate-700 text-sm leading-relaxed italic mb-6">
+                "Our son is currently on his Hifz journey with Qari Yusuf. The tripartite daily revision system (Sabaq, Sabqi, Manzil) is pure excellence. The monthly report card keeps us completely informed on his retention scores. Alhamdulillah for Noor Al-Huda!"
+              </p>
+            </div>
+
+            <div class="pt-4 border-t border-slate-100 flex items-center space-x-3">
+              <div class="w-10 h-10 rounded-full bg-emerald-100 text-emerald-800 font-bold flex items-center justify-center text-sm">
+                HZ
+              </div>
+              <div>
+                <div class="font-bold text-sm text-slate-900">Dr. Haroon & Zainab M.</div>
+                <div class="text-xs text-slate-500">Toronto, Ontario, Canada</div>
+                <div class="text-[11px] text-emerald-700 font-medium">Course: Hifz-ul-Quran Track</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= SECTION 9: FAQ ACCORDION ================= -->
+    <section id="faq" class="py-20 bg-white">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Header -->
+        <div class="text-center mb-12">
+          <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full emerald-badge text-xs font-bold uppercase tracking-wider mb-3">
+            <i data-lucide="help-circle" class="w-3.5 h-3.5"></i>
+            <span>Clear Answers</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+            Frequently Asked Questions
+          </h2>
+          <p class="text-slate-600 mt-3 text-base sm:text-lg">
+            Everything you need to know about starting your free trial, class scheduling, and equipment.
+          </p>
+
+          <!-- Category filter pills for FAQ -->
+          <div class="flex flex-wrap justify-center gap-2 mt-6">
+            <button data-faq-cat="all" class="faq-filter-btn px-3 py-1.5 rounded-xl text-xs font-semibold bg-emerald-800 text-white transition-colors">
+              All Questions
+            </button>
+            <button data-faq-cat="trial" class="faq-filter-btn px-3 py-1.5 rounded-xl text-xs font-semibold bg-white text-slate-700 hover:bg-slate-100 transition-colors border border-slate-200">
+              Free Trial & Fees
+            </button>
+            <button data-faq-cat="teachers" class="faq-filter-btn px-3 py-1.5 rounded-xl text-xs font-semibold bg-white text-slate-700 hover:bg-slate-100 transition-colors border border-slate-200">
+              Female Teachers & Tutors
+            </button>
+            <button data-faq-cat="tech" class="faq-filter-btn px-3 py-1.5 rounded-xl text-xs font-semibold bg-white text-slate-700 hover:bg-slate-100 transition-colors border border-slate-200">
+              Equipment & Scheduling
+            </button>
+          </div>
+        </div>
+
+        <!-- FAQ Items Accordion -->
+        <div class="space-y-4">
+          
+          <!-- FAQ 1: Free trial details -->
+          <div class="faq-item bg-[#faf9f5] rounded-2xl border border-slate-200/90 overflow-hidden" data-category="trial">
+            <button class="faq-header w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none">
+              <span class="text-base font-bold text-slate-900">How does the free trial work? Do I need to enter payment details?</span>
+              <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-emerald-800 transition-transform duration-300 shrink-0"></i>
+            </button>
+            <div class="faq-content px-6 text-sm text-slate-600 leading-relaxed">
+              <div class="pb-5">
+                Our free trial includes <strong>up to 3 full 1-on-1 sessions</strong> with your matched tutor. Absolutely <strong>no credit card or billing details</strong> are required to begin. During the trial, the tutor assesses current recitation, demonstrates teaching method, and aligns on goals. You only choose a paid plan if you and your child are 100% satisfied.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 2: Female teachers -->
+          <div class="faq-item bg-[#faf9f5] rounded-2xl border border-slate-200/90 overflow-hidden active" data-category="teachers">
+            <button class="faq-header w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none">
+              <span class="text-base font-bold text-slate-900">Can we request a female Quran teacher for our daughters or sisters?</span>
+              <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-emerald-800 transition-transform duration-300 shrink-0"></i>
+            </button>
+            <div class="faq-content px-6 text-sm text-slate-600 leading-relaxed">
+              <div class="pb-5">
+                <strong>Yes, absolutely.</strong> We have a large, highly qualified faculty of certified female teachers (Alimahs and Hafizas) dedicated exclusively to teaching sisters and younger children. You can specify "Female Tutor Only" directly in the registration form.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 3: Tech Requirements -->
+          <div class="faq-item bg-[#faf9f5] rounded-2xl border border-slate-200/90 overflow-hidden" data-category="tech">
+            <button class="faq-header w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none">
+              <span class="text-base font-bold text-slate-900">What software and equipment do we need to attend classes?</span>
+              <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-emerald-800 transition-transform duration-300 shrink-0"></i>
+            </button>
+            <div class="faq-content px-6 text-sm text-slate-600 leading-relaxed">
+              <div class="pb-5">
+                All you need is an internet connection and any smart device: a <strong>laptop, PC, iPad, tablet, or smartphone</strong>. We use Zoom or Google Meet (whichever is easier for you). A headset or earphones with a microphone is recommended for crystal-clear pronunciation feedback. All digital Qaida books and Mushafs are provided free in PDF.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 4: Rescheduling -->
+          <div class="faq-item bg-[#faf9f5] rounded-2xl border border-slate-200/90 overflow-hidden" data-category="tech">
+            <button class="faq-header w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none">
+              <span class="text-base font-bold text-slate-900">What happens if my child is sick or we have family travel?</span>
+              <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-emerald-800 transition-transform duration-300 shrink-0"></i>
+            </button>
+            <div class="faq-content px-6 text-sm text-slate-600 leading-relaxed">
+              <div class="pb-5">
+                We know life happens! Simply message your tutor or our WhatsApp support team at least 4 hours in advance, and your class will be marked for a <strong>free makeup session</strong> at a later convenient date. You never lose paid hours due to sickness or travel.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 5: Adult beginners -->
+          <div class="faq-item bg-[#faf9f5] rounded-2xl border border-slate-200/90 overflow-hidden" data-category="trial">
+            <button class="faq-header w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none">
+              <span class="text-base font-bold text-slate-900">I am an adult and have never learned Arabic. Is it too late for me?</span>
+              <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-emerald-800 transition-transform duration-300 shrink-0"></i>
+            </button>
+            <div class="faq-content px-6 text-sm text-slate-600 leading-relaxed">
+              <div class="pb-5">
+                It is never too late. The Prophet ﷺ said: <em>"The one who recites the Quran and stammers in it, finding it difficult, will have a double reward."</em> (Sahih Muslim). Over 35% of our students are adult professionals starting from the very first letter of the alphabet. Our tutors are patient, encouraging, and will guide you step by step.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 6: Tutor vetting -->
+          <div class="faq-item bg-[#faf9f5] rounded-2xl border border-slate-200/90 overflow-hidden" data-category="teachers">
+            <button class="faq-header w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none">
+              <span class="text-base font-bold text-slate-900">How do you vet and hire your tutors?</span>
+              <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-emerald-800 transition-transform duration-300 shrink-0"></i>
+            </button>
+            <div class="faq-content px-6 text-sm text-slate-600 leading-relaxed">
+              <div class="pb-5">
+                Every applicant undergoes a rigorous 4-step selection: 1) Verification of Islamic degrees and Ijazah sanad, 2) Tajweed audition with our Senior Recitation Board, 3) Child psychology and English communication interview, and 4) Background identity checks. We accept fewer than 5% of all applicants.
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= SECTION 10: FREE TRIAL REGISTRATION & CONTACT FORM ================= -->
+    <section id="contact" class="py-20 bg-[#faf9f5] border-t border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+          
+          <!-- Left Column: Academy Info & Value Props -->
+          <div class="lg:col-span-5 space-y-6">
+            <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full gold-badge text-xs font-bold uppercase tracking-wider">
+              <i data-lucide="sparkles" class="w-3.5 h-3.5 text-gold-600"></i>
+              <span>Admissions Open</span>
+            </div>
+
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight">
+              Begin Your 3-Day Free Trial Today
+            </h2>
+
+            <p class="text-slate-600 text-base leading-relaxed">
+              Experience the difference of a compassionate, Ijazah-certified tutor. Fill out the registration form, and our admissions team will contact you via WhatsApp within 2 hours to confirm your trial slot.
+            </p>
+
+            <!-- Academy Contact Details Card -->
+            <div class="p-6 rounded-3xl bg-white border border-slate-200 space-y-4">
+              <div class="flex items-start space-x-3.5">
+                <div class="w-9 h-9 rounded-xl bg-emerald-100 text-emerald-800 flex items-center justify-center shrink-0">
+                  <i data-lucide="map-pin" class="w-4 h-4"></i>
+                </div>
+                <div>
+                  <div class="text-xs font-bold uppercase text-slate-500">Academy Headquarters</div>
+                  <div class="text-sm font-semibold text-slate-900">Noor Al-Huda Global Campus</div>
+                  <div class="text-xs text-slate-600">Educational Tower, Global Online Operations</div>
+                </div>
+              </div>
+
+              <div class="flex items-start space-x-3.5">
+                <div class="w-9 h-9 rounded-xl bg-emerald-100 text-emerald-800 flex items-center justify-center shrink-0">
+                  <i data-lucide="mail" class="w-4 h-4"></i>
+                </div>
+                <div>
+                  <div class="text-xs font-bold uppercase text-slate-500">Admissions Email</div>
+                  <a href="mailto:admissions@nooralhudaaacademy.example" class="text-sm font-semibold text-emerald-800 hover:underline">
+                    admissions@nooralhudaaacademy.example
+                  </a>
+                </div>
+              </div>
+
+              <div class="flex items-start space-x-3.5">
+                <div class="w-9 h-9 rounded-xl bg-emerald-100 text-emerald-800 flex items-center justify-center shrink-0">
+                  <i data-lucide="phone" class="w-4 h-4"></i>
+                </div>
+                <div>
+                  <div class="text-xs font-bold uppercase text-slate-500">WhatsApp & Phone Support (24/7)</div>
+                  <a href="https://wa.me/15550192834" target="_blank" class="text-sm font-semibold text-slate-900 hover:text-emerald-800">
+                    +1 (555) 019-2834
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Trust Guarantee Callout -->
+            <div class="p-4 rounded-2xl bg-emerald-50 border border-emerald-200 text-xs text-emerald-900 flex items-center space-x-3">
+              <i data-lucide="lock" class="w-5 h-5 text-emerald-700 shrink-0"></i>
+              <span>Your contact details are strictly confidential. We never share your number or email with third parties.</span>
+            </div>
+
+          </div>
+
+          <!-- Right Column: Interactive Free Trial Form -->
+          <div class="lg:col-span-7">
+            <div class="bg-white rounded-3xl p-8 sm:p-10 border border-slate-200/90 shadow-xl relative">
+              
+              <div class="border-b border-slate-100 pb-5 mb-6">
+                <h3 class="text-xl sm:text-2xl font-bold text-slate-900">Student Trial Registration</h3>
+                <p class="text-xs sm:text-sm text-slate-500 mt-1">Please provide the student’s information to personalize the trial session.</p>
+              </div>
+
+              <form id="mainTrialForm" class="space-y-5">
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <!-- Student Full Name -->
+                  <div>
+                    <label class="block text-xs font-bold text-slate-700 uppercase mb-1.5" for="studentName">
+                      Student Full Name <span class="text-red-500">*</span>
+                    </label>
+                    <input type="text" id="studentName" name="studentName" required placeholder="e.g. Zayd Ahmed" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-700 focus:border-transparent">
+                  </div>
+
+                  <!-- Age / Category -->
+                  <div>
+                    <label class="block text-xs font-bold text-slate-700 uppercase mb-1.5" for="studentAge">
+                      Age / Level <span class="text-red-500">*</span>
+                    </label>
+                    <select id="studentAge" name="studentAge" required class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-700 focus:border-transparent bg-white">
+                      <option value="Child (Ages 4-7)">Child (Ages 4–7)</option>
+                      <option value="Child (Ages 8-12)" selected>Child (Ages 8–12)</option>
+                      <option value="Teen (Ages 13-17)">Teen (Ages 13–17)</option>
+                      <option value="Adult (18+)">Adult Learner (18+)</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <!-- Course Interest -->
+                  <div>
+                    <label class="block text-xs font-bold text-slate-700 uppercase mb-1.5" for="courseInterest">
+                      Course Interest <span class="text-red-500">*</span>
+                    </label>
+                    <select id="courseInterest" name="course" required class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-700 focus:border-transparent bg-white">
+                      <option value="Noorani Qaida & Arabic Pronunciation">Noorani Qaida (Foundation)</option>
+                      <option value="Quran Reading with Tajweed" selected>Quran Reading with Tajweed</option>
+                      <option value="Hifz-ul-Quran (Memorization)">Hifz-ul-Quran (Memorization Track)</option>
+                      <option value="Daily Duas & Islamic Etiquette for Kids">Daily Duas & Islamic Etiquette</option>
+                      <option value="Tafseer & Quranic Arabic Basics">Tafseer & Quranic Arabic (Adults)</option>
+                    </select>
+                  </div>
+
+                  <!-- Tutor Preference -->
+                  <div>
+                    <label class="block text-xs font-bold text-slate-700 uppercase mb-1.5" for="tutorGender">
+                      Tutor Preference <span class="text-red-500">*</span>
+                    </label>
+                    <select id="tutorGender" name="tutorGender" required class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-700 focus:border-transparent bg-white">
+                      <option value="No Preference (First Available)">No Preference (First Available)</option>
+                      <option value="Female Tutor Only">Female Tutor Only (For Sisters/Kids)</option>
+                      <option value="Male Tutor Only">Male Tutor Only</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <!-- Preferred Time Slot -->
+                  <div>
+                    <label class="block text-xs font-bold text-slate-700 uppercase mb-1.5" for="preferredTime">
+                      Preferred Time Slot <span class="text-red-500">*</span>
+                    </label>
+                    <select id="preferredTime" name="preferredTime" required class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-700 focus:border-transparent bg-white">
+                      <option value="Morning (8:00 AM - 12:00 PM)">Morning (8:00 AM – 12:00 PM)</option>
+                      <option value="Afternoon (12:00 PM - 4:00 PM)">Afternoon (12:00 PM – 4:00 PM)</option>
+                      <option value="Evening (4:00 PM - 8:00 PM)" selected>Evening (4:00 PM – 8:00 PM)</option>
+                      <option value="Night (8:00 PM - 11:00 PM)">Night (8:00 PM – 11:00 PM)</option>
+                      <option value="Weekend Mornings">Weekend Mornings Only</option>
+                    </select>
+                  </div>
+
+                  <!-- Timezone -->
+                  <div>
+                    <label class="block text-xs font-bold text-slate-700 uppercase mb-1.5" for="timezoneSelect">
+                      Your Time Zone <span class="text-red-500">*</span>
+                    </label>
+                    <select id="timezoneSelect" name="timezone" class="timezone-select w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-700 focus:border-transparent bg-white">
+                      <option value="America/New_York">Eastern Time (US & Canada - GMT-5/4)</option>
+                      <option value="America/Chicago">Central Time (US - GMT-6/5)</option>
+                      <option value="America/Los_Angeles">Pacific Time (US & Canada - GMT-8/7)</option>
+                      <option value="Europe/London">London / UK Time (GMT / BST)</option>
+                      <option value="Europe/Paris">Central European Time (GMT+1/2)</option>
+                      <option value="Asia/Dubai">Gulf Standard Time (UAE - GMT+4)</option>
+                      <option value="Australia/Sydney">Sydney / Melbourne (AEST - GMT+10/11)</option>
+                      <option value="Asia/Karachi">Pakistan Standard Time (PKT - GMT+5)</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <!-- WhatsApp Number -->
+                  <div>
+                    <label class="block text-xs font-bold text-slate-700 uppercase mb-1.5" for="whatsappNumber">
+                      WhatsApp / Phone (With Country Code) <span class="text-red-500">*</span>
+                    </label>
+                    <input type="tel" id="whatsappNumber" name="whatsapp" required placeholder="+1 (555) 234-5678" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-700 focus:border-transparent">
+                  </div>
+
+                  <!-- Parent/Student Email -->
+                  <div>
+                    <label class="block text-xs font-bold text-slate-700 uppercase mb-1.5" for="studentEmail">
+                      Email Address <span class="text-red-500">*</span>
+                    </label>
+                    <input type="email" id="studentEmail" name="email" required placeholder="parent@example.com" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-700 focus:border-transparent">
+                  </div>
+                </div>
+
+                <!-- Notes / Prior Experience -->
+                <div>
+                  <label class="block text-xs font-bold text-slate-700 uppercase mb-1.5" for="studentNotes">
+                    Current Arabic Level or Special Request (Optional)
+                  </label>
+                  <textarea id="studentNotes" name="notes" rows="2" placeholder="e.g., Complete beginner, knows basic letters, or wants sister teacher for daughter..." class="w-full px-4 py-2 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-700 focus:border-transparent"></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="pt-2">
+                  <button type="submit" class="w-full btn-gold py-4 rounded-xl font-bold text-base flex items-center justify-center space-x-2 shadow-lg">
+                    <span>Submit & Book Free Trial Class</span>
+                    <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                  </button>
+                  <p class="text-[11px] text-center text-slate-500 mt-2.5">
+                    By submitting, you agree to receive a trial scheduling message via WhatsApp or email.
+                  </p>
+                </div>
+
+              </form>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= NOBLE AYAH BANNER ================= -->
+  <div class="bg-gradient-to-r from-emerald-950 via-emerald-900 to-emerald-950 text-white py-12 border-t border-gold-500/30">
+    <div class="max-w-4xl mx-auto px-4 text-center space-y-3">
+      <div class="font-arabic text-2xl sm:text-3xl text-gold-400 font-bold tracking-wide">
+        اقْرَأْ بِاسْمِ رَبِّكَ الَّذِي خَلَقَ
+      </div>
+      <p class="text-sm italic text-emerald-200">
+        "Read in the name of your Lord who created." — Surah Al-'Alaq (96:1)
+      </p>
+    </div>
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-emerald-950 text-emerald-100 pt-16 pb-12 border-t border-emerald-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-emerald-900/80">
+        
+        <!-- Col 1: Brand Info -->
+        <div class="lg:col-span-2 space-y-4">
+          <div class="flex items-center space-x-3">
+            <div class="w-10 h-10 rounded-xl bg-emerald-900 flex items-center justify-center text-gold-400 border border-gold-500/40 text-lg">
+              📖
+            </div>
+            <div>
+              <div class="font-extrabold text-xl text-white tracking-tight">Noor Al-Huda</div>
+              <div class="text-xs font-arabic text-gold-400">أكاديمية القرآن الكريم عبر الإنترنت</div>
+            </div>
+          </div>
+          <p class="text-xs text-emerald-300 leading-relaxed max-w-sm">
+            Dedicated to providing authentic, serene, and personalized 1-on-1 Quran education for learners across the globe. Preserving classical Tajweed with modern educational care.
+          </p>
+          <div class="flex items-center space-x-3 pt-2">
+            <a href="#" class="w-8 h-8 rounded-lg bg-emerald-900 hover:bg-gold-500 hover:text-emerald-950 transition-colors flex items-center justify-center text-emerald-300" aria-label="Facebook">
+              <i data-lucide="facebook" class="w-4 h-4"></i>
+            </a>
+            <a href="#" class="w-8 h-8 rounded-lg bg-emerald-900 hover:bg-gold-500 hover:text-emerald-950 transition-colors flex items-center justify-center text-emerald-300" aria-label="YouTube">
+              <i data-lucide="youtube" class="w-4 h-4"></i>
+            </a>
+            <a href="#" class="w-8 h-8 rounded-lg bg-emerald-900 hover:bg-gold-500 hover:text-emerald-950 transition-colors flex items-center justify-center text-emerald-300" aria-label="Instagram">
+              <i data-lucide="instagram" class="w-4 h-4"></i>
+            </a>
+            <a href="https://wa.me/15550192834" target="_blank" class="w-8 h-8 rounded-lg bg-emerald-900 hover:bg-green-500 hover:text-white transition-colors flex items-center justify-center text-emerald-300" aria-label="WhatsApp">
+              <i data-lucide="message-circle" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Core Courses -->
+        <div>
+          <div class="text-xs font-bold uppercase tracking-wider text-gold-400 mb-4">Core Courses</div>
+          <ul class="space-y-2 text-xs text-emerald-200">
+            <li><a href="#courses" class="hover:text-gold-300 transition-colors">Noorani Qaida</a></li>
+            <li><a href="#courses" class="hover:text-gold-300 transition-colors">Quran Reading with Tajweed</a></li>
+            <li><a href="#courses" class="hover:text-gold-300 transition-colors">Hifz-ul-Quran (Memorization)</a></li>
+            <li><a href="#courses" class="hover:text-gold-300 transition-colors">Daily Duas & Akhlaq</a></li>
+            <li><a href="#courses" class="hover:text-gold-300 transition-colors">Tafseer & Quranic Arabic</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Navigation Quick Links -->
+        <div>
+          <div class="text-xs font-bold uppercase tracking-wider text-gold-400 mb-4">Quick Links</div>
+          <ul class="space-y-2 text-xs text-emerald-200">
+            <li><a href="#how-it-works" class="hover:text-gold-300 transition-colors">How It Works</a></li>
+            <li><a href="#tutors" class="hover:text-gold-300 transition-colors">Our Certified Tutors</a></li>
+            <li><a href="#pricing" class="hover:text-gold-300 transition-colors">Monthly Tuition & Plans</a></li>
+            <li><a href="#testimonials" class="hover:text-gold-300 transition-colors">Parent Testimonials</a></li>
+            <li><a href="#faq" class="hover:text-gold-300 transition-colors">Common Questions (FAQ)</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact & Support -->
+        <div>
+          <div class="text-xs font-bold uppercase tracking-wider text-gold-400 mb-4">Support & Admissions</div>
+          <ul class="space-y-2 text-xs text-emerald-200">
+            <li class="flex items-center"><i data-lucide="phone" class="w-3.5 h-3.5 mr-2 text-gold-400"></i> +1 (555) 019-2834</li>
+            <li class="flex items-center"><i data-lucide="mail" class="w-3.5 h-3.5 mr-2 text-gold-400"></i> admissions@nooralhudaaacademy.example</li>
+            <li class="flex items-center"><i data-lucide="clock" class="w-3.5 h-3.5 mr-2 text-gold-400"></i> 24/7 Global Student Support</li>
+            <li class="pt-2">
+              <button class="trigger-booking-modal btn-gold text-xs px-3 py-1.5 rounded-lg font-bold">
+                Book Free Trial
+              </button>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Copyright & Disclaimer -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-emerald-400 gap-4">
+        <div>
+          &copy; 2026 Noor Al-Huda Online Quran Academy. All rights reserved.
+        </div>
+        <div class="flex space-x-6">
+          <a href="#" class="hover:text-emerald-200">Privacy Policy</a>
+          <a href="#" class="hover:text-emerald-200">Terms of Service</a>
+          <a href="#" class="hover:text-emerald-200">Safeguarding & Ethics</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ================= MODAL 1: COURSE SYLLABUS BREAKDOWN ================= -->
+  <div id="syllabusModal" class="modal-container fixed inset-0 z-50 modal-backdrop hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl border border-slate-200 p-6 sm:p-8 animate-fadeIn relative">
+      <button class="modal-close-btn absolute top-5 right-5 p-2 rounded-full text-slate-400 hover:text-slate-700 hover:bg-slate-100">
+        <i data-lucide="x" class="w-6 h-6"></i>
+      </button>
+
+      <div class="border-b border-slate-100 pb-4 mb-5">
+        <div class="flex items-center justify-between">
+          <span id="syllabusLevel" class="px-3 py-1 rounded-full text-xs font-bold bg-emerald-100 text-emerald-800">Level</span>
+          <span id="syllabusArabicTitle" class="font-arabic text-emerald-800 text-lg font-bold"></span>
+        </div>
+        <h3 id="syllabusTitle" class="text-2xl font-extrabold text-slate-900 mt-2">Course Syllabus</h3>
+        <div class="flex flex-wrap gap-4 text-xs text-slate-500 mt-1">
+          <span>Target Audience: <strong id="syllabusAge" class="text-slate-700"></strong></span>
+          <span>Estimated Duration: <strong id="syllabusDuration" class="text-slate-700"></strong></span>
+        </div>
+      </div>
+
+      <div class="space-y-6">
+        <div>
+          <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">Course Overview</h4>
+          <p id="syllabusOverview" class="text-sm text-slate-600 leading-relaxed"></p>
+        </div>
+
+        <div>
+          <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-3">Module Curriculum & Progression</h4>
+          <div id="syllabusModules" class="space-y-2.5">
+            <!-- Dynamic module items inserted by JS -->
+          </div>
+        </div>
+
+        <div>
+          <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">What Is Included</h4>
+          <ul id="syllabusFeatures" class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
+            <!-- Dynamic feature items inserted by JS -->
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-8 pt-6 border-t border-slate-100 flex items-center justify-end space-x-3">
+        <button class="modal-close-btn px-4 py-2.5 rounded-xl text-xs font-semibold text-slate-600 hover:bg-slate-100 transition-colors">
+          Close
+        </button>
+        <button id="syllabusBookBtn" class="btn-gold px-6 py-2.5 rounded-xl text-xs font-bold flex items-center space-x-2">
+          <span>Book Free Trial for this Course</span>
+          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= MODAL 2: TUTOR PROFILE MODAL ================= -->
+  <div id="tutorModal" class="modal-container fixed inset-0 z-50 modal-backdrop hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-xl w-full max-h-[90vh] overflow-y-auto shadow-2xl border border-slate-200 p-6 sm:p-8 animate-fadeIn relative">
+      <button class="modal-close-btn absolute top-5 right-5 p-2 rounded-full text-slate-400 hover:text-slate-700 hover:bg-slate-100">
+        <i data-lucide="x" class="w-6 h-6"></i>
+      </button>
+
+      <div class="flex items-center space-x-4 border-b border-slate-100 pb-5 mb-5">
+        <img id="tutorModalPhoto" src="" alt="" class="w-20 h-20 rounded-2xl object-cover border-2 border-gold-400 shadow">
+        <div>
+          <span id="tutorModalBadge" class="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-emerald-100 text-emerald-800">Badge</span>
+          <h3 id="tutorModalName" class="text-xl font-bold text-slate-900 mt-1"></h3>
+          <div id="tutorModalArabic" class="font-arabic text-emerald-800 text-xs font-bold"></div>
+          <p id="tutorModalRole" class="text-xs font-semibold text-emerald-700"></p>
+        </div>
+      </div>
+
+      <div class="space-y-4 text-xs text-slate-700">
+        <div>
+          <h4 class="font-bold uppercase tracking-wider text-slate-400 mb-1">Academic Credentials</h4>
+          <p id="tutorModalQual" class="text-sm text-slate-800 font-medium"></p>
+        </div>
+
+        <div class="grid grid-cols-2 gap-4 p-3 bg-slate-50 rounded-xl">
+          <div>
+            <div class="text-slate-400 uppercase text-[10px] font-bold">Experience</div>
+            <div id="tutorModalExp" class="font-semibold text-slate-800"></div>
+          </div>
+          <div>
+            <div class="text-slate-400 uppercase text-[10px] font-bold">Rating</div>
+            <div id="tutorModalRating" class="font-semibold text-amber-600"></div>
+          </div>
+          <div>
+            <div class="text-slate-400 uppercase text-[10px] font-bold">Students Mentored</div>
+            <div id="tutorModalStudents" class="font-semibold text-slate-800"></div>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="font-bold uppercase tracking-wider text-slate-400 mb-1.5">Specializations</h4>
+          <div id="tutorModalSpecialties" class="flex flex-wrap gap-1.5"></div>
+        </div>
+
+        <div>
+          <h4 class="font-bold uppercase tracking-wider text-slate-400 mb-1.5">Languages Spoken</h4>
+          <div id="tutorModalLanguages" class="flex flex-wrap gap-1.5"></div>
+        </div>
+
+        <div>
+          <h4 class="font-bold uppercase tracking-wider text-slate-400 mb-1">Instructor Biography</h4>
+          <p id="tutorModalBio" class="text-slate-600 leading-relaxed"></p>
+        </div>
+      </div>
+
+      <div class="mt-6 pt-5 border-t border-slate-100 flex items-center justify-end space-x-3">
+        <button class="modal-close-btn px-4 py-2.5 rounded-xl text-xs font-semibold text-slate-600 hover:bg-slate-100 transition-colors">
+          Close
+        </button>
+        <button id="tutorModalBookBtn" class="btn-gold px-6 py-2.5 rounded-xl text-xs font-bold flex items-center space-x-2">
+          <span>Request Trial with this Tutor</span>
+          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= MODAL 3: GLOBAL QUICK BOOKING MODAL ================= -->
+  <div id="bookingModal" class="modal-container fixed inset-0 z-50 modal-backdrop hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-lg w-full max-h-[92vh] overflow-y-auto shadow-2xl border border-slate-200 p-6 sm:p-8 animate-fadeIn relative">
+      <button class="modal-close-btn absolute top-5 right-5 p-2 rounded-full text-slate-400 hover:text-slate-700 hover:bg-slate-100">
+        <i data-lucide="x" class="w-6 h-6"></i>
+      </button>
+
+      <div class="border-b border-slate-100 pb-4 mb-5">
+        <span class="px-3 py-1 rounded-full text-xs font-bold bg-gold-100 text-amber-900 border border-gold-300">
+          3-Day Free Evaluation
+        </span>
+        <h3 class="text-xl sm:text-2xl font-bold text-slate-900 mt-2">Book Your Free Trial Class</h3>
+        <p class="text-xs text-slate-500 mt-1">No payment required. We match you with the ideal certified tutor.</p>
+      </div>
+
+      <form id="modalTrialForm" class="space-y-4">
+        <div>
+          <label class="block text-xs font-bold text-slate-700 uppercase mb-1" for="modalStudentName">Student Full Name *</label>
+          <input type="text" id="modalStudentName" name="studentName" required placeholder="e.g. Maryam Khan" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-700">
+        </div>
+
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-bold text-slate-700 uppercase mb-1" for="modalStudentAge">Age Category *</label>
+            <select id="modalStudentAge" name="studentAge" class="w-full px-3 py-2.5 rounded-xl border border-slate-300 text-sm bg-white">
+              <option value="Child (4-7)">Child (4–7)</option>
+              <option value="Child (8-12)" selected>Child (8–12)</option>
+              <option value="Teen (13-17)">Teen (13–17)</option>
+              <option value="Adult (18+)">Adult (18+)</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold text-slate-700 uppercase mb-1" for="modalTutorGender">Tutor Preference</label>
+            <select id="modalTutorGender" name="tutorGender" class="w-full px-3 py-2.5 rounded-xl border border-slate-300 text-sm bg-white">
+              <option value="any">Any Qualified Tutor</option>
+              <option value="female">Female Tutor Only</option>
+              <option value="male">Male Tutor Only</option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-slate-700 uppercase mb-1" for="modalCourseSelect">Course Interest *</label>
+          <select id="modalCourseSelect" name="course" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm bg-white">
+            <option value="qaida">Noorani Qaida & Arabic Pronunciation</option>
+            <option value="tajweed" selected>Quran Reading with Tajweed</option>
+            <option value="hifz">Hifz-ul-Quran (Memorization Track)</option>
+            <option value="duas">Daily Duas & Islamic Etiquette for Kids</option>
+            <option value="tafseer">Tafseer & Quranic Arabic Basics</option>
+          </select>
+        </div>
+
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-bold text-slate-700 uppercase mb-1" for="modalPreferredTime">Preferred Time</label>
+            <select id="modalPreferredTime" name="preferredTime" class="w-full px-3 py-2.5 rounded-xl border border-slate-300 text-sm bg-white">
+              <option value="Morning">Morning</option>
+              <option value="Afternoon">Afternoon</option>
+              <option value="Evening" selected>Evening</option>
+              <option value="Weekend">Weekend</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold text-slate-700 uppercase mb-1" for="modalTimezone">Timezone</label>
+            <select id="modalTimezone" name="timezone" class="timezone-select w-full px-3 py-2.5 rounded-xl border border-slate-300 text-sm bg-white">
+              <option value="America/New_York">US Eastern (GMT-5)</option>
+              <option value="America/Chicago">US Central (GMT-6)</option>
+              <option value="America/Los_Angeles">US Pacific (GMT-8)</option>
+              <option value="Europe/London">UK / London (GMT)</option>
+              <option value="Europe/Paris">Europe (CET)</option>
+              <option value="Asia/Dubai">UAE (GST)</option>
+              <option value="Australia/Sydney">Australia (AEST)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-bold text-slate-700 uppercase mb-1" for="modalWhatsapp">WhatsApp Number *</label>
+            <input type="tel" id="modalWhatsapp" name="whatsapp" required placeholder="+1 (555) 000-0000" class="w-full px-3 py-2 rounded-xl border border-slate-300 text-sm">
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-slate-700 uppercase mb-1" for="modalEmail">Email Address *</label>
+            <input type="email" id="modalEmail" name="email" required placeholder="name@example.com" class="w-full px-3 py-2 rounded-xl border border-slate-300 text-sm">
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-slate-700 uppercase mb-1" for="modalNotes">Special Notes</label>
+          <input type="text" id="modalNotes" name="notes" placeholder="e.g. beginner, prefer weekend evening..." class="w-full px-4 py-2 rounded-xl border border-slate-300 text-sm">
+        </div>
+
+        <div class="pt-3">
+          <button type="submit" class="w-full btn-gold py-3.5 rounded-xl font-bold text-sm">
+            Confirm & Reserve Free Trial Slot
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ================= MODAL 4: SUCCESS CONFIRMATION RECEIPT ================= -->
+  <div id="successModal" class="modal-container fixed inset-0 z-50 modal-backdrop hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-md w-full shadow-2xl border border-slate-200 p-6 sm:p-8 animate-fadeIn text-center relative">
+      <button class="modal-close-btn absolute top-5 right-5 p-2 rounded-full text-slate-400 hover:text-slate-700 hover:bg-slate-100">
+        <i data-lucide="x" class="w-6 h-6"></i>
+      </button>
+
+      <div class="w-16 h-16 rounded-full bg-emerald-100 text-emerald-800 mx-auto flex items-center justify-center text-3xl mb-4 border-2 border-emerald-300">
+        ✓
+      </div>
+
+      <div class="font-arabic text-emerald-900 text-xl font-bold">بَارَكَ اللَّهُ فِيكُمْ</div>
+      <h3 class="text-2xl font-extrabold text-slate-900 mt-1">Free Trial Reserved!</h3>
+      <p class="text-xs text-slate-600 mt-1">Thank you for choosing Noor Al-Huda Academy.</p>
+
+      <!-- Booking Receipt Card -->
+      <div class="mt-5 p-4 rounded-2xl bg-emerald-50/70 border border-emerald-100 text-left text-xs space-y-2">
+        <div class="flex justify-between border-b border-emerald-100/80 pb-2">
+          <span class="text-slate-500 font-medium">Reference Code:</span>
+          <span id="confRefId" class="font-mono font-bold text-emerald-950">NHA-00000</span>
+        </div>
+        <div class="flex justify-between">
+          <span class="text-slate-500">Student:</span>
+          <span id="confStudentName" class="font-bold text-slate-800"></span>
+        </div>
+        <div class="flex justify-between">
+          <span class="text-slate-500">Course:</span>
+          <span id="confCourse" class="font-bold text-slate-800"></span>
+        </div>
+        <div class="flex justify-between">
+          <span class="text-slate-500">Tutor Gender:</span>
+          <span id="confTutorPref" class="font-semibold text-emerald-800"></span>
+        </div>
+        <div class="flex justify-between">
+          <span class="text-slate-500">Preferred Slot:</span>
+          <span id="confTimeSlot" class="font-semibold text-slate-800"></span>
+        </div>
+        <div class="flex justify-between pt-1 border-t border-emerald-100/80">
+          <span class="text-slate-500">Contact:</span>
+          <span id="confContact" class="font-mono text-slate-800 text-[11px]"></span>
+        </div>
+      </div>
+
+      <!-- Next Steps Guidance -->
+      <div class="mt-4 p-3 rounded-xl bg-amber-50 border border-amber-200 text-left text-xs text-amber-950 leading-relaxed">
+        <strong>What happens next?</strong><br>
+        1. Our admissions coordinator will send you a WhatsApp message within 2 hours to confirm your tutor and exact class time.<br>
+        2. You will receive your direct Zoom/Google Meet link and free digital course guide.
+      </div>
+
+      <div class="mt-6 flex space-x-3">
+        <button id="btnPrintConfirmation" class="flex-1 py-2.5 rounded-xl border border-slate-300 text-xs font-bold text-slate-700 hover:bg-slate-50 flex items-center justify-center">
+          <i data-lucide="printer" class="w-3.5 h-3.5 mr-1.5"></i> Print / Save
+        </button>
+        <button class="modal-close-btn flex-1 btn-gold py-2.5 rounded-xl text-xs font-bold">
+          Done
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lucide Icon Initialization -->
+  <script>
+    lucide.createIcons();
+  </script>
+
+  <!-- Application Logic -->
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
